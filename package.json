@@ -23,10 +23,10 @@
     "eslint-config-prettier": "^6.10.1",
     "eslint-plugin-prettier": "^3.1.2",
     "html-validate": "^2.19.0",
-    "husky": "^3.1.0",
+    "husky": "^4.2.5",
     "linkinator": "^2.0.6",
     "nodemon": "^2.0.1",
-    "prettier": "^1.19.1",
+    "prettier": "^2.0.4",
     "pretty-quick": "^2.0.1",
     "serve": "^11.2.0"
   }
