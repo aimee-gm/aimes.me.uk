@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="{{ site.description }}"/>
+    <link rel="authorization_endpoint" href="https://indieauth.com/auth"/>
+    <link rel="token_endpoint" href="https://tokens.indieauth.com/token"/>
+    <link rel="microsub" href="https://aperture.p3k.io/microsub/492"/>
+    <link rel="stylesheet" href="/assets/css/style.css" type="text/css"/>
+    <link rel="icon" type="image/jpg" href="{{ site.favicon }}"/>
+    <title>{% pageTitle renderData.title or title,
+      site.name %}</title>
+    <style>
+      svg {
+        width: 1rem;
+        height: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="container navbar-top">
+        <a href="/" title="Home" class="my-site-name">
+          {{ site.navName }}
+        </a>
+        {{ collections.all | eleventyNavigation | eleventyNavigationToHtml({
+          activeListItemClass: "active",
+          activeKey: eleventyNavigation.key
+        }) | safe }}
+      </nav>
+    </header>
+    <div class="main-content">
+      <div class="container">
+        {{ content | safe }}
+      </div>
+    </div>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-links">
+          <div class="copyright">
+          &copy; {% copyrightYear %}
+            {{ me.name }}
+          </div>
+          <ul class="social">
+            {% for link in socialLinks %}
+              <li>
+                <a href="{{ link.url }}" aria-label="{{ link.label }}" rel="me">
+                  {% icon link.icon %} @{{ link.username }}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="credits">
+          <p>Icons made by <a href="https://www.flaticon.com/authors/freepik">Freepik</a> from <a href="https://www.flaticon.com/">Flaticon</a>.</p>
+          <p>Built using <a href="https://11ty.dev">Eleventy</a> with <a href="https://www.gitlab.com/">Gitlab</a> and hosted on <a href="https://www.netlify.com/">Netlify</a>.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+name: Aimee Gamble-Milner
+photo:
+  url: https://secure.gravatar.com/avatar/047fad23247776da5b4426c995047eb2?size=256
+  alt: Aimee Gamble-Milner's profile picture
+pronouns:
+  nominative: she
+  oblique: her
+locality:
+  city: London
+  country: UK
+tube:
+  station: Stratford
+  url: https://tfl.gov.uk/hub/stop/HUBSRA/stratford/
+suffix:
+  suffix: PhD
+  url: http://etheses.whiterose.ac.uk/2909/
+job:
+  organisation: Bulb
+  url: https://bulb.co.uk
+  title: Full-Stack Software Engineer

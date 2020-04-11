@@ -1,0 +1,36 @@
+---
+layout: feed
+collection: posts
+permalink: "/"
+eleventyNavigation:
+  key: Home
+  order: 1
+---
+
+<div class="h-card aimee">
+  <div class="about">
+    <p>
+      I'm <a href="{{ site.url }}" rel="me" class="p-name u-url u-uid">{{ me.name }}</a>,
+      {% externalLink me.suffix.url, me.suffix.suffix, "p-honorific-suffix" %}
+      ({% pronouns me.pronouns %}),
+      a <span class="p-job-title">{{ me.job.title }}</span> working at 
+      {% externalLink me.job.url, me.job.organisation, "p-org h-card" %}.
+    </p>
+    <p>
+      My current home is in {% locality me.locality %} and the nearest tube
+      station is {% icon "tube" %}
+      {% externalLink me.tube.url,
+      me.tube.station %}.
+    </p>
+    <p>
+      I'm using this site to log what I've started to do since I started to live in London,
+      and to serve as encouragement to keep doing them too!
+    </p>
+    <p>You can see what I'm currently up to on my <a href="/now/">now page</a>.</p>
+  </div>
+  <div class="photo">
+    {% profilePicture me.photo %}
+  </div>
+</div>
+<hr/>
+<h2>Feed</h2>

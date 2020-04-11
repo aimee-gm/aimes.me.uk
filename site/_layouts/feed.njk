@@ -1,0 +1,9 @@
+---
+layout: base
+---
+<main>
+  {{ content | safe }}
+  {% for post in collections[collection] | reverse %}
+    {% include "feed-post.njk" %}
+  {% endfor %}
+</main>

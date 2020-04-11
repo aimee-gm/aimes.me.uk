@@ -1,0 +1,13 @@
+{% set permalink = post.url %}
+{% set title = post.data.title %}
+{% set content = post.templateContent %}
+{% set postType = post.data.postType %}
+{% set bookmark = post.data.bookmark %}
+{% set checkin = post.data.checkin %}
+{% set icon = post.data.icon %}
+{% set summary = post.data.summary %}
+{% set tags = post.data.tags %}
+{% set page = post.data.page %}
+{% set photo = post.data.photo %}
+{% set reply = post.data.reply %}
+{% include "post.njk" %}

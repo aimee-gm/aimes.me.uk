@@ -1,0 +1,27 @@
+.aimee {
+  @apply mb-8;
+
+  @screen sm {
+    @apply flex flex-row justify-between;
+  }
+
+  .about {
+    @apply flex-grow max-w-2xl;
+  }
+
+  .photo {
+    @apply flex-shrink-0 text-center mt-4;
+
+    @screen sm {
+      @apply ml-4 mt-0;
+    }
+  }
+
+  .profile-picture {
+    @apply w-24 h-24 inline-block;
+
+    @screen md {
+      @apply w-32 h-32;
+    }
+  }
+}

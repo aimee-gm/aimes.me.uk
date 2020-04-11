@@ -1,0 +1,126 @@
+body {
+  @apply bg-lightGrey;
+}
+
+h1 {
+  @apply mb-2 text-3xl;
+}
+
+h2 {
+  @apply mt-4 mb-2 text-2xl;
+}
+
+p {
+  @apply my-2;
+}
+
+.container {
+  @screen lg {
+    @apply max-w-4xl;
+  }
+}
+
+.site-header {
+  @apply bg-blue;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  @apply inline-block fill-current align-text-top;
+}
+
+.navbar-top {
+  @apply text-white flex items-center;
+
+  .my-site-name {
+    @apply flex-grow font-serif text-2xl;
+  }
+
+  ul {
+    @apply flex;
+    li {
+      @apply my-2 ml-6;
+      &.active a {
+        box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5);
+      }
+      a {
+        @apply block p-2 rounded;
+        &:hover {
+          @apply bg-white text-blue;
+        }
+      }
+    }
+  }
+}
+
+.main-content {
+  @apply bg-white;
+  .container {
+    @apply py-8 pb-32;
+  }
+
+  a {
+    @apply text-blue underline;
+    &:hover {
+      @apply text-green no-underline;
+    }
+  }
+}
+
+.article {
+  @apply leading-normal;
+  ul {
+    @apply list-disc list-inside pl-4;
+  }
+  .last-updated {
+    @apply text-sm opacity-50 my-2;
+  }
+}
+
+hr {
+  @apply border-green my-4;
+}
+
+.site-footer {
+  .container {
+    @apply py-8 items-center;
+  }
+
+  .footer-links {
+    @apply mb-8;
+    @screen sm {
+      @apply flex;
+    }
+  }
+
+  .copyright {
+    @apply flex-grow py-2;
+  }
+
+  .social {
+    @apply whitespace-no-wrap;
+
+    @screen sm {
+      @apply flex;
+    }
+
+    li {
+      @apply block ml-4;
+    }
+
+    a {
+      @apply inline-block p-2 rounded-lg;
+      &:hover {
+        @apply bg-blue text-white;
+      }
+    }
+  }
+  svg {
+    @apply align-middle w-4 h-4 inline-block fill-current;
+  }
+
+  .credits {
+    @apply text-center opacity-50 text-sm;
+  }
+}

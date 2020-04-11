@@ -1,0 +1,56 @@
+<div class="post h-entry {{ postType }}">
+  <div class="post-icon">
+    {% icon icon or postType %}
+  </div>
+  <div class="post-details">
+    {% if postType === "reply" %}
+      {% include "partials/reply.njk" %}
+    {% elseif postType === "bookmark" %}
+      {% include "partials/bookmark.njk" %}
+    {% elseif postType === "checkin" %}
+      {% include "partials/checkin.njk" %}
+    {% elseif title %}
+      <p class="p-name post-title">
+        {{ title }}
+      </p>
+    {% endif %}
+    {% if summary %}
+      <p class="p-summary">{{ summary }}</p>
+    {% endif %}
+    {% if photo %}
+      <p>
+        {% responsive photo.src,
+        photo.alt %}
+      </p>
+    {% endif %}
+    {% if content %}
+      <div class="e-content">
+        {{ content | safe }}
+      </div>
+    {% endif %}
+    <div class="post-meta">
+      <p class="post-time">
+        {% icon "clock" %}
+        {% if page.url %}
+          <a href="{{ page.url }}" class="u-url permalink">
+          {% endif %}
+          <time datetime="{{ page.date | isoDate }}" class="dt-published">
+            {{ page.date | longDate }}
+          </time>
+          {% if page.url %}
+          </a>
+        {% endif %}
+      </p>
+      <p class="tags">
+        {% icon "tag" %}
+        {% for tag in tags | visibleTags %}
+          <a href="/tags/{{tag}}/" class="p-category" title="All posts tagged &quot;{{tag}}&quot;">{{tag}}</a>
+        {% endfor %}
+      </p>
+      <p class="author p-author h-card">
+        {% profilePicture me.photo %}
+        <a href="/" class="u-url p-name">{{ me.name }}</a>
+      </p>
+    </div>
+  </div>
+</div>

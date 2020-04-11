@@ -1,0 +1,19 @@
+{
+  "name": "@aimee.gm/site",
+  "version": "1.0.0",
+  "description": "Aimee's personal website",
+  "private": true,
+  "author": "Aimee Gamble-Milner",
+  "scripts": {
+    "build": "eleventy"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "@11ty/eleventy-navigation": "^0.1.5",
+    "@aimee.gm/responsive": "^0.5.0",
+    "common-tags": "^1.8.0",
+    "date-fns": "^2.11.1",
+    "js-yaml": "^3.13.1",
+    "pretty": "^2.0.0"
+  }
+}

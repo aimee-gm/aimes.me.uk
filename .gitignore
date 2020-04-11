@@ -1,0 +1,14 @@
+node_modules
+_site
+site/src/**/*.js
+functions/**/*.js
+generator/**/*.js
+generator-data/**/*.js
+generator-react/**/*.js
+generator-utils/**/*.js
+site/assets/css
+.cache
+.env
+dist
+yarn-error.log
+.DS_Store

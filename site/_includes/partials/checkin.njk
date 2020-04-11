@@ -1,0 +1,32 @@
+<p class="u-checkin h-card p-location checkin post-title">
+  Checked into
+  <a href="{{ checkin.url }}" class="u-url"><span class="p-name">{{ checkin.name }}</span></a>
+  {% if checkin.event %}
+    for 
+    {% if checkin.event.url %}
+      <a href="{{ checkin.event.url }}">
+        {{ checkin.event.name }}
+      </a>
+    {% else %}
+      {{ checkin.event.name }}
+    {% endif %}
+  {% endif %}
+  {% if checkin.address %}
+    <br/>
+    <span class="p-adr h-adr address">
+      {% if checkin.address.extended %}
+        <span class="p-extended-address">{{ checkin.address.extended }}</span>{% endif %}
+      {% if checkin.address.locality %}
+        <span class="p-locality">{{ checkin.address.locality }}</span>
+      {% endif %}
+      {% if checkin.address.country %}
+        <span class="p-country">{{ checkin.address.country }}</span>
+      {% endif %}
+    </span>
+  {% endif %}
+</p>
+{% if checkin.event %}
+  <data class="p-name" value="Checked into {{ checkin.name }} for {{ checkin.event.name }}"></data>
+{% else %}
+  <data class="p-name" value="Checked into {{ checkin.name }}"></data>
+{% endif %}
