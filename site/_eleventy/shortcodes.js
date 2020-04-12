@@ -13,7 +13,7 @@ const pageTitle = (pageTitle, siteTitle) => {
 
 const copyrightYear = () => new Date().getFullYear().toString();
 
-const icon = iconName =>
+const icon = (iconName) =>
   html`
     <svg focusable="false" class="icon">
       <use xlink:href="/assets/images/icons.svg#${iconName}"></use>
@@ -43,9 +43,7 @@ const externalLink = (url, label, className) => html`
 `;
 
 const profilePicture = ({ url, alt }) =>
-  html`
-    <img class="u-photo profile-picture" alt="${alt}" src="${url}" />
-  `;
+  html` <img class="u-photo profile-picture" alt="${alt}" src="${url}" /> `;
 
 const responsive = (filepath, alt) => {
   const { src, srcset } = responsiveImages(filepath);

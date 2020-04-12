@@ -1,7 +1,7 @@
 const pretty = require("pretty");
 
 module.exports = {
-  prettify: content =>
+  prettify: (content) =>
     pretty(content, {
       ocd: true,
     }),

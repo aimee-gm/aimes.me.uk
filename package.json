@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "Aimee's personal website",
   "private": true,
+  "workspaces": [
+    "site",
+    "styles",
+    "icons"
+  ],
   "scripts": {
     "start": "wsrun -a start",
     "build": "yarn workspaces run build",
@@ -10,13 +15,10 @@
     "validate": "html-validate './dist/**/*.html'",
     "broken-links": "linkinator ./dist",
     "verify-images": "yarn workspace @aimee.gm/site verify-resized-images",
-    "resize-images": "yarn workspace @aimee.gm/site resize-images"
+    "resize-images": "yarn workspace @aimee.gm/site resize-images",
+    "prettier:list": "yarn prettier '**/*.{js,svg,md,yaml,yml}' --list-different",
+    "prettier:fix": "yarn prettier '**/*.{js,svg,md,yaml,yml}' --write"
   },
-  "workspaces": [
-    "site",
-    "styles",
-    "icons"
-  ],
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
@@ -39,7 +41,7 @@
   },
   "lint-staged": {
     "*.{js}": "eslint --cache --fix",
-    "*.{js,njk,md}": "prettier --write"
+    "*.{js,svg,md,yaml,yml}": "prettier --write"
   },
   "commitlint": {
     "extends": [
