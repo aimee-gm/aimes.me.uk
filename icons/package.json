@@ -1,0 +1,13 @@
+{
+  "name": "@aimee.gm/icons",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "svg-symbols ./src > ../site/assets/images/icons.svg",
+    "build": "svg-symbols ./src > ../dist/assets/images/icons.svg"
+  },
+  "devDependencies": {
+    "svg-symbols": "^1.0.5"
+  }
+}

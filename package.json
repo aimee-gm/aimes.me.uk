@@ -14,11 +14,13 @@
   },
   "workspaces": [
     "site",
-    "styles"
+    "styles",
+    "icons"
   ],
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
+    "@prettier/plugin-xml": "^0.7.2",
     "eslint": "^6.7.2",
     "eslint-config-prettier": "^6.10.1",
     "eslint-plugin-prettier": "^3.1.2",
@@ -36,7 +38,8 @@
     }
   },
   "lint-staged": {
-    "*.{js,ts,tsx}": "eslint --cache --fix"
+    "*.{js}": "eslint --cache --fix",
+    "*.{js,njk,md}": "prettier --write"
   },
   "commitlint": {
     "extends": [
