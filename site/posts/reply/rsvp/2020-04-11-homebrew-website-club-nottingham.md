@@ -5,7 +5,7 @@ reply:
   name: "ONLINE: Homebrew Website Club: Nottingham"
   event:
     start: 2020-04-15T17:30+01:00
-  rsvp: maybe
+  rsvp: yes
 tags:
   - homebrew
   - meetup
