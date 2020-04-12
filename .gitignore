@@ -6,3 +6,4 @@ yarn-error.log
 .DS_Store
 .eslintcache
 site/assets/css
+site/assets/images/icons.svg
