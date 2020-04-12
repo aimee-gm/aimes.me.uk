@@ -4,8 +4,8 @@
   "description": "Aimee's personal website",
   "private": true,
   "scripts": {
-    "start": "TZ=\"Europe/London\" wsrun -a start",
-    "build": "TZ=\"Europe/London\" yarn workspaces run build",
+    "start": "wsrun -a start",
+    "build": "yarn workspaces run build",
     "lint": "eslint . --ext=js,ts,tsx",
     "validate": "html-validate './dist/**/*.html'",
     "broken-links": "linkinator ./dist",

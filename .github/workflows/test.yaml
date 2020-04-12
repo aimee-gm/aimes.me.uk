@@ -2,6 +2,9 @@ name: Build and validate website
 
 on: [push]
 
+env:
+  TZ: Europe/London
+
 jobs:
   build_and_validate:
     runs-on: ubuntu-latest

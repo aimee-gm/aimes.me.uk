@@ -1,14 +1,17 @@
 const { format } = require("date-fns");
 const { URL } = require("url");
 
-const isoDate = date => date.toISOString();
-const longDate = date => format(date, "EEE, do LLL YYY 'at' h:mm aaaa");
-const visibleTags = tags => tags.filter(tag => !["posts"].includes(tag));
-const hostname = url => new URL(url).hostname;
-const toDate = str => str && new Date(str);
-const justDate = date => format(date, "EEE, do LLL YYY");
+const justDateFormat = "EEE, do LLL YYY";
+const londDateFormat = `${justDateFormat} 'at' h:mm aaaa`;
 
-const rsvpText = rsvp => {
+const isoDate = (date) => date.toISOString();
+const longDate = (date) => format(date, londDateFormat);
+const visibleTags = (tags) => tags.filter((tag) => !["posts"].includes(tag));
+const hostname = (url) => new URL(url).hostname;
+const toDate = (str) => str && new Date(str);
+const justDate = (date) => format(date, justDateFormat);
+
+const rsvpText = (rsvp) => {
   switch (rsvp) {
     case "yes":
       return "Will attend";

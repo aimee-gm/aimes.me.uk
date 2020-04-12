@@ -8,7 +8,7 @@
     "start": "eleventy --serve --port=5000",
     "build": "eleventy"
   },
-  "dependencies": {
+  "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
     "@11ty/eleventy-navigation": "^0.1.5",
     "@aimee.gm/responsive": "^0.5.0",
