@@ -4,9 +4,7 @@
   {% if checkin.event %}
     for 
     {% if checkin.event.url %}
-      <a href="{{ checkin.event.url }}">
-        {{ checkin.event.name }}
-      </a>
+      <a href="{{ checkin.event.url }}">{{ checkin.event.name }}</a>
     {% else %}
       {{ checkin.event.name }}
     {% endif %}
