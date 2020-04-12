@@ -44,7 +44,7 @@
       <p class="tags">
         {% icon "tag" %}
         {% for tag in tags | visibleTags %}
-          <a href="/tags/{{tag}}/" class="p-category" title="All posts tagged &quot;{{tag}}&quot;">{{tag}}</a>
+          <a href="{{ tag | tagUrl }}" class="p-category" title="All posts tagged &quot;{{tag}}&quot;">{{tag}}</a>
         {% endfor %}
       </p>
       <p class="author p-author h-card">

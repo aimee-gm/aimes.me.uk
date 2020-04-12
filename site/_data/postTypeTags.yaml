@@ -1,0 +1,15 @@
+- tag: bookmark
+  label: Bookmarks
+  icon: bookmark
+- tag: checkin
+  label: Checkins
+  icon: location
+- tag: note
+  label: Notes
+  icon: note
+- tag: photo
+  label: Photos
+  icon: photo
+- tag: rsvp
+  label: RSVPs
+  icon: calendar

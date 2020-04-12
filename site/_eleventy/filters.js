@@ -10,6 +10,7 @@ const visibleTags = (tags) => tags.filter((tag) => !["posts"].includes(tag));
 const hostname = (url) => new URL(url).hostname;
 const toDate = (str) => str && new Date(str);
 const justDate = (date) => format(date, justDateFormat);
+const tagUrl = (tag) => `/tags/${tag}/`;
 
 const rsvpText = (rsvp) => {
   switch (rsvp) {
@@ -30,4 +31,5 @@ module.exports = {
   toDate,
   justDate,
   rsvpText,
+  tagUrl,
 };
