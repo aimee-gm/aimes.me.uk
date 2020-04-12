@@ -23,8 +23,4 @@
     </span>
   {% endif %}
 </p>
-{% if checkin.event %}
-  <data class="p-name" value="Checked into {{ checkin.name }} for {{ checkin.event.name }}"></data>
-{% else %}
-  <data class="p-name" value="Checked into {{ checkin.name }}"></data>
-{% endif %}
+<data class="p-name" value="{{ title }}"></data>

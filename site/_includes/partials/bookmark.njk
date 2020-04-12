@@ -1,5 +1,5 @@
 <p class="post-title">
-  <a href="{{bookmark}}" class="u-bookmark-of p-name">{{ title }}</a>
+  <a href="{{ bookmark.url }}" class="u-bookmark-of p-name">{{ bookmark.name }}</a>
   <br/>
-  <span class="hostname">{{bookmark | hostname}}</span>
+  <span class="hostname">{{bookmark.url | hostname}}</span>
 </p>

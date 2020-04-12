@@ -1,18 +1,14 @@
-{% set startDate = reply.date.start | toDate %}
-
 <p class="post-title">
   {% if reply.rsvp %}
-    <data class="p-rsvp" value="{{ reply.rsvp }}"></data>
-    {{ reply.rsvp | rsvpText}}
+    <data class="p-rsvp" value="{{ reply.rsvp }}">{{ reply.rsvp | rsvpText}}</data>
   {% endif %}
-  <a href="{{reply.url}}" class="u-in-reply-to">{{ reply.name }}</a>
-  {% if startDate %}
+  <a href="{{ reply.url }}" class="u-in-reply-to">{{ reply.name }}</a>
+  {% if reply.event and reply.event.start %}
     <br/>
     <span class="reply-date">
-      on
-      <time datetime="{{ startDate | isoDate }}" class="dt-start">
-        {{ startDate | justDate }}
-      </time>
+          on
+          <time datetime="{{ reply.event.start | toDate | isoDate }}" class="dt-start">{{ reply.event.start | toDate | justDate }}</time>
     </span>
   {% endif %}
 </p>
+<data class="p-name" value="{{ title }}"></data>

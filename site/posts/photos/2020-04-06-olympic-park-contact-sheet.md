@@ -8,7 +8,6 @@ tags:
   - contact_sheet
   - black_and_white
   - film
-icon: film
 ---
 
 Visits to the Olympic park in March and April 2020.

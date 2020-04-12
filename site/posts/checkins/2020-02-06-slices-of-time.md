@@ -10,7 +10,6 @@ checkin:
     name: Slices of Time (Emmanuelle Moureaux)
     url: https://nowgallery.co.uk/exhibitions/slices-of-time/
 date: 2020-02-06T18:30
-icon: exhibition
 tags:
   - exhibition
   - art

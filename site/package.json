@@ -9,7 +9,7 @@
     "build": "eleventy"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.10.0",
+    "@11ty/eleventy": "^0.11.0-beta.3",
     "@11ty/eleventy-navigation": "^0.1.5",
     "@aimee.gm/responsive": "^0.5.0",
     "common-tags": "^1.8.0",

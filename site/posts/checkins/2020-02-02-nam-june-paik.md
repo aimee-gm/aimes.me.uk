@@ -10,7 +10,6 @@ checkin:
     name: Nam June Paik
     url: https://www.tate.org.uk/whats-on/tate-modern/exhibition/nam-june-paik
 date: 2020-02-02T13:00
-icon: exhibition
 tags:
   - exhibition
   - art
