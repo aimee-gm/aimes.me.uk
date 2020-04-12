@@ -5,6 +5,7 @@
   "private": true,
   "author": "Aimee Gamble-Milner",
   "scripts": {
+    "start": "yarn build -w",
     "build": "postcss src/index.pcss -o ../dist/assets/css/style.css --verbose"
   },
   "devDependencies": {

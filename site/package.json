@@ -5,6 +5,7 @@
   "private": true,
   "author": "Aimee Gamble-Milner",
   "scripts": {
+    "start": "eleventy --serve --port=5000",
     "build": "eleventy"
   },
   "dependencies": {

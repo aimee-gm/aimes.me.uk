@@ -4,9 +4,8 @@
   "description": "Aimee's personal website",
   "private": true,
   "scripts": {
-    "start": "nodemon",
+    "start": "TZ=\"Europe/London\" wsrun -a start",
     "build": "TZ=\"Europe/London\" yarn workspaces run build",
-    "serve": "serve dist",
     "lint": "eslint . --ext=js,ts,tsx",
     "validate": "html-validate './dist/**/*.html'",
     "broken-links": "linkinator ./dist",
@@ -27,9 +26,8 @@
     "husky": "^4.2.5",
     "linkinator": "^2.0.6",
     "lint-staged": "^10.1.3",
-    "nodemon": "^2.0.1",
     "prettier": "^2.0.4",
-    "serve": "^11.2.0"
+    "wsrun": "^5.2.0"
   },
   "husky": {
     "hooks": {

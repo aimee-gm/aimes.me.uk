@@ -1,5 +1,0 @@
-{
-  "watch": ["site", "styles"],
-  "ext": "js yaml md pcss njk",
-  "exec": "yarn build"
-}
