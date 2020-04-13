@@ -37,6 +37,10 @@ module.exports = {
         return data.title;
       }
 
+      if (data.photo && data.tags.includes("profile_picture")) {
+        return "Uploaded a new profile picture";
+      }
+
       if (data.checkin && data.checkin.event) {
         return `Checked into ${data.checkin.name} for ${data.checkin.event.name}`;
       }
