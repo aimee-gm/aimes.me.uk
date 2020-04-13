@@ -19,8 +19,7 @@
     {% endif %}
     {% if photo %}
       <p>
-        {% responsive photo.src,
-        photo.alt %}
+        {% postResponsiveImage photo %}
       </p>
     {% endif %}
     {% if content %}
@@ -48,7 +47,7 @@
         {% endfor %}
       </p>
       <p class="author p-author h-card">
-        {% profilePicture me.photo %}
+        {% profileResponsiveImage me.photo %}
         <a href="/" class="u-url p-name">{{ me.name }}</a>
       </p>
     </div>

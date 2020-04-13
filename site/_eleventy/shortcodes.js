@@ -1,5 +1,5 @@
 const { html } = require("common-tags");
-const { responsiveImages } = require("@aimee.gm/responsive");
+const { responsiveImage } = require("./media");
 
 const pageTitle = (pageTitle, siteTitle) => {
   const maxLength = 65 - siteTitle.length - 6;
@@ -42,22 +42,6 @@ const externalLink = (url, label, className) => html`
   >
 `;
 
-const profilePicture = ({ url, alt }) =>
-  html` <img class="u-photo profile-picture" alt="${alt}" src="${url}" /> `;
-
-const responsive = (filepath, alt) => {
-  const { src, srcset } = responsiveImages(filepath);
-
-  const sizes = [
-    "(min-width: 1025px) 864px",
-    "(min-width: 768px) 736px",
-    "(min-width: 645px) 608px",
-    "100vw",
-  ].join(", ");
-
-  return `<img src="${src}" srcset="${srcset}" sizes="${sizes}" alt="${alt}" class="u-photo" />`;
-};
-
 module.exports = {
   pageTitle,
   copyrightYear,
@@ -65,6 +49,6 @@ module.exports = {
   pronouns,
   locality,
   externalLink,
-  profilePicture,
-  responsive,
+  postResponsiveImage: responsiveImage("post"),
+  profileResponsiveImage: responsiveImage("profile", "u-photo profile-picture"),
 };

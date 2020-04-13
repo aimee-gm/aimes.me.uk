@@ -1,9 +1,0 @@
-srcDir: _photos
-outDir: assets/images/photos
-sizes:
-  - 400
-  - 800
-  - 1600
-  - 2400
-srcRewrite: assets/images/photos
-defaultSize: 1600

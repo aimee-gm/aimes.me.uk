@@ -14,8 +14,6 @@
     "lint": "eslint . --ext=js,ts,tsx",
     "validate": "html-validate './dist/**/*.html'",
     "broken-links": "linkinator ./dist",
-    "verify-images": "yarn workspace @aimee.gm/site verify-resized-images",
-    "resize-images": "yarn workspace @aimee.gm/site resize-images",
     "prettier:list": "yarn prettier '**/*.{js,svg,md,yaml,yml}' --list-different",
     "prettier:fix": "yarn prettier '**/*.{js,svg,md,yaml,yml}' --write"
   },
