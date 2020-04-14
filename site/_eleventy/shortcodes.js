@@ -11,8 +11,6 @@ const pageTitle = (pageTitle, siteTitle) => {
   return pageTitle ? `${truncatedTitle} ⁠- ${siteTitle}` : siteTitle;
 };
 
-const copyrightYear = () => new Date().getFullYear().toString();
-
 const icon = (iconName) =>
   html`
     <svg focusable="false" class="icon">
@@ -44,7 +42,6 @@ const externalLink = (url, label, className) => html`
 
 module.exports = {
   pageTitle,
-  copyrightYear,
   icon,
   pronouns,
   locality,
