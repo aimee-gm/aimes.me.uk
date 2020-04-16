@@ -8,6 +8,7 @@ env:
 jobs:
   build_and_validate:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
@@ -18,4 +19,3 @@ jobs:
       - run: yarn prettier:list
       - run: yarn build
       - run: yarn validate
-      - run: yarn broken-links
