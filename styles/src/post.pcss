@@ -1,13 +1,6 @@
 .post {
   @apply flex flex-row my-8;
 
-  .post-title {
-    @apply text-lg leading-tight mb-1;
-    @screen md {
-      @apply text-xl;
-    }
-  }
-
   > .post-icon {
     @apply mr-4 text-2xl flex-shrink-0;
 
@@ -20,7 +13,7 @@
     @apply flex-grow;
   }
 
-  &.note .e-content > p:first-child,
+  &.note .post-content > p:first-child,
   .post-title {
     @apply mt-0;
   }
@@ -29,36 +22,12 @@
     @apply text-grey align-middle;
   }
 
-  .e-content {
-    @apply text-lg;
-  }
-
-  .post-meta {
-    @apply text-grey my-0;
-
-    @screen md {
-      @apply flex flex-row justify-between my-2;
-
-      p {
-        @apply my-0;
-      }
-    }
-  }
-
   .tags a {
     @apply ml-1;
   }
 
   .author {
     display: none;
-  }
-
-  .post-meta a {
-    @apply text-grey;
-
-    &:hover {
-      @apply text-green;
-    }
   }
 
   .hostname,
@@ -72,6 +41,37 @@
     @apply no-underline;
     &:hover {
       @apply underline;
+    }
+  }
+}
+
+.post-content {
+  @apply text-lg;
+}
+
+.post-title {
+  @apply text-lg leading-tight mb-1;
+  @screen md {
+    @apply text-xl;
+  }
+}
+
+.post-meta {
+  @apply text-grey my-0;
+
+  @screen md {
+    @apply flex flex-row justify-between my-2;
+
+    p {
+      @apply my-0;
+    }
+  }
+
+  a {
+    @apply text-grey;
+
+    &:hover {
+      @apply text-green;
     }
   }
 }
