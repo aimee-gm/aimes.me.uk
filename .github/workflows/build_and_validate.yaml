@@ -13,9 +13,20 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-      - run: yarn
+      - name: Install dependencies
+        run: yarn
       - run: yarn lint
       - run: yarn prettier:list
-      - run: yarn build
-      - run: yarn validate
-      - run: yarn broken-links
+      - name: Build the site
+        run: yarn build
+      - name: Validate generated HTML
+        run: yarn validate
+      # - name: Check for broken links
+      #   run: yarn broken-links
+      - name: Audit URLs using Lighthouse
+        uses: treosh/lighthouse-ci-action@v2
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
+        with:
+          configPath: "./.lighthouserc.json"
+          uploadArtifacts: true
