@@ -1,10 +1,10 @@
 {
   "ci": {
-    "collect": {
-      "staticDistDir": "./dist"
-    },
     "assert": {
-      "preset": "lighthouse:no-pwa"
+      "preset": "lighthouse:no-pwa",
+      "assertions": {
+        "categories:performance": ["off"]
+      }
     },
     "upload": {
       "target": "temporary-public-storage"

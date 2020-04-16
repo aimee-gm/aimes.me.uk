@@ -28,5 +28,7 @@ jobs:
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
         with:
+          urls: |
+            https://www.aimes.me.uk
           configPath: "./.lighthouserc.json"
           uploadArtifacts: true
