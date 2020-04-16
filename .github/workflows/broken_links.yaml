@@ -1,0 +1,20 @@
+name: Check for broken links
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  broken_links:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: Install dependencies
+        run: yarn
+      - name: Check for broken links
+        run: yarn linkinator https://www.aimes.me.uk
