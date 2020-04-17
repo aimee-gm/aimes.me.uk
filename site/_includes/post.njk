@@ -28,18 +28,7 @@
       </div>
     {% endif %}
     <div class="post-meta">
-      <p class="post-time">
-        {% icon "clock" %}
-        {% if page.url %}
-          <a href="{{ page.url }}" class="u-url permalink">
-          {% endif %}
-          <time datetime="{{ page.date | isoDate }}" class="dt-published">
-            {{ page.date | longDate }}
-          </time>
-          {% if page.url %}
-          </a>
-        {% endif %}
-      </p>
+      {% include "partials/permalink.njk" %}
       <p class="tags">
         {% icon "tag" %}
         {% for tag in tags | visibleTags %}

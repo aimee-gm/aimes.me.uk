@@ -1,6 +1,8 @@
 const { format } = require("date-fns");
 const { URL } = require("url");
 
+const baseUrl = process.env.DEPLOY_PRIME_URL || process.env.URL || "";
+
 const justDateFormat = "EEE, do LLL YYY";
 const londDateFormat = `${justDateFormat} 'at' h:mm aaaa`;
 
@@ -11,6 +13,8 @@ const hostname = (url) => new URL(url).hostname;
 const toDate = (str) => str && new Date(str);
 const justDate = (date) => format(date, justDateFormat);
 const tagUrl = (tag) => `/tags/${tag}/`;
+const canonicalUrl = (url) =>
+  baseUrl ? new URL(url, baseUrl).toString() : url;
 
 const rsvpText = (rsvp) => {
   switch (rsvp) {
@@ -32,4 +36,5 @@ module.exports = {
   justDate,
   rsvpText,
   tagUrl,
+  canonicalUrl,
 };

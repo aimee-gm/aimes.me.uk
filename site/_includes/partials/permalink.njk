@@ -1,0 +1,12 @@
+<p class="post-time">
+  {% icon "clock" %}
+  {% if page.url %}
+    <a href="{{ page.url | canonicalUrl }}" class="u-url permalink">
+    {% endif %}
+    <time datetime="{{ page.date | isoDate }}" class="dt-published">
+      {{ page.date | longDate }}
+    </time>
+    {% if page.url %}
+    </a>
+  {% endif %}
+</p>
