@@ -12,5 +12,5 @@ checkin:
 date: 2020-02-02T13:00
 tags:
   - exhibition
-  - art
+  - art_gallery
 ---

@@ -1,0 +1,17 @@
+<nav aria-labelledby="pagination-title" class="pagination">
+  <h2 id="pagination-title">Continue to more pages</h2>
+  {% if pagination.href.previous %}
+    <a href="{{ pagination.href.previous }}">&larr; Previous <span class="page">page</span></a>
+  {% endif %}
+  <ol>
+    {%- for pageEntry in pagination.pages %}
+      {% set href = pagination.hrefs[loop.index0] %}
+      <li>
+        <a href="{{ href }}"{% if page.url == href %} aria-current="page"{% endif %} aria-label="Page {{ loop.index }}">{{ loop.index }}</a>
+      </li>
+    {%- endfor %}
+  </ol>
+  {% if pagination.href.next %}
+    <a href="{{ pagination.href.next }}">Next <span class="page">page</span> &rarr;</a>
+  {% endif %}
+</nav>

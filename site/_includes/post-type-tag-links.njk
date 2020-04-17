@@ -1,0 +1,11 @@
+<div class="post-type-tag-links">
+  <h3>Posts by type</h3>
+  <p>
+    {% for type in postTypeTags %}
+      <a href="{{ type.tag | tagUrl }}">
+        {% icon type.icon %}
+        {{ type.label }}
+     ({{collections[type.tag].length}})</a>
+    {% endfor %}
+  </p>
+</div>

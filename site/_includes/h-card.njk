@@ -1,0 +1,26 @@
+<div class="h-card aimee">
+  <div class="about">
+    <p>
+      I'm <a href="{{ site.url }}" rel="me" class="p-name u-url u-uid">{{ me.name }}</a>,
+      {% externalLink me.suffix.url, me.suffix.suffix, "p-honorific-suffix" %}
+      (<span class="p-x-pronoun-nominative">{{me.pronouns.nominative}}</span>/<span class="p-x-pronoun-oblique">{{me.pronouns.oblique}}</span>),
+      a <span class="p-job-title">{{ me.job.title }}</span> working at 
+      {% externalLink me.job.url, me.job.organisation, "p-org h-card" %}.
+    </p>
+    <p>
+      My current home is in <span class="p-locality">{{me.locality.city}}</span>,
+      <span class="p-country-name">{{me.locality.country}}</span> and the nearest tube
+      station is {% icon "tube" %}
+      {% externalLink me.tube.url,
+      me.tube.station %}.
+    </p>
+    <p>
+      I'm using this site to log what I've started to do since I started to live in London,
+      and to serve as encouragement to keep doing them too!
+    </p>
+    <p>You can see what I'm currently up to on my <a href="/now/">now page</a>.</p>
+  </div>
+  <div class="photo">
+    {% profileResponsiveImage me.photo %}
+  </div>
+</div>

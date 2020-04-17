@@ -6,6 +6,8 @@ const baseUrl = process.env.DEPLOY_PRIME_URL || process.env.URL || "";
 const justDateFormat = "EEE, do LLL YYY";
 const londDateFormat = `${justDateFormat} 'at' h:mm aaaa`;
 
+const indexPaginationPermalink = (pageNumber) =>
+  pageNumber ? `/page/${pageNumber + 1}/` : "/";
 const isoDate = (date) => date.toISOString();
 const longDate = (date) => format(date, londDateFormat);
 const visibleTags = (tags) => tags.filter((tag) => !["posts"].includes(tag));
@@ -37,4 +39,5 @@ module.exports = {
   rsvpText,
   tagUrl,
   canonicalUrl,
+  indexPaginationPermalink,
 };

@@ -18,18 +18,6 @@ const icon = (iconName) =>
     </svg>
   `;
 
-const pronouns = ({ nominative, oblique }) => html`
-  <span class="p-x-pronoun-nominative">${nominative}</span>/<span
-    class="p-x-pronoun-oblique"
-    >${oblique}</span
-  >
-`;
-
-const locality = ({ city, country }) => html`
-  <span class="p-locality">${city}</span>,
-  <span class="p-country-name">${country}</span>
-`;
-
 const externalLink = (url, label, className) => html`
   <a
     href="${url}"
@@ -43,8 +31,6 @@ const externalLink = (url, label, className) => html`
 module.exports = {
   pageTitle,
   icon,
-  pronouns,
-  locality,
   externalLink,
   postResponsiveImage: responsiveImage("post"),
   profileResponsiveImage: responsiveImage("profile", "u-photo profile-picture"),

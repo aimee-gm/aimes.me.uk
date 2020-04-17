@@ -1,0 +1,46 @@
+.pagination {
+  @apply mt-8 text-center px-4 py-2 border border-lightGrey rounded-md;
+
+  h2 {
+    @apply hidden;
+  }
+
+  > a,
+  ol li {
+    @apply inline-block;
+  }
+
+  a {
+    @apply p-1;
+  }
+
+  > a {
+    @apply mx-1;
+  }
+
+  .page {
+    @screen sm {
+      @apply hidden;
+    }
+  }
+
+  ol {
+    @apply hidden;
+
+    @screen sm {
+      @apply inline-block;
+    }
+
+    li a {
+      @apply py-1 px-2;
+    }
+
+    li + li {
+      @apply ml-1;
+    }
+  }
+
+  a[aria-current] {
+    @apply text-black no-underline;
+  }
+}
