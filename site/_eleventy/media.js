@@ -1,63 +1,30 @@
 const { html } = require("common-tags");
 
-const mediaQueriesToWidths = (type) =>
-  mediaQueries[type]
-    .reduce((srcset, { width }) => {
-      if (!width.includes("px")) {
-        return srcset;
-      }
-
-      const pixels = parseInt(width.replace("px"));
-
-      return [...srcset, pixels, pixels * 2];
-    }, [])
-    .sort((a, b) => a - b);
-
-const mediaQueriesToSizes = (type) =>
-  mediaQueries[type]
-    .map(({ width, mediaQuery }) => {
-      if (!mediaQuery) {
-        return width;
-      }
-
-      return `(${mediaQuery}) ${width}`;
-    })
-    .join(", ");
-
 const mediaQueries = {
   post: [
-    { width: "824px", mediaQuery: "min-width: 1024px" },
-    { width: "696px", mediaQuery: "min-width: 768px" },
-    { width: "568px", mediaQuery: "min-width: 645px" },
-    { width: "100vw" },
+    { width: 824, mediaQuery: "(min-width: 1024px)" },
+    { width: 696, mediaQuery: "(min-width: 768px)" },
+    { width: 568, mediaQuery: "(min-width: 420px)" },
+    { width: 348 },
   ],
-  profile: [
-    { width: "128px", mediaQuery: "min-width: 768px" },
-    { width: "96px" },
-  ],
-};
-
-const widths = {
-  post: mediaQueriesToWidths("post"),
-  profile: mediaQueriesToWidths("profile"),
-};
-
-const sizes = {
-  post: mediaQueriesToSizes("post"),
-  profile: mediaQueriesToSizes("profile"),
+  profile: [{ width: 128, mediaQuery: "(min-width: 768px)" }, { width: 96 }],
 };
 
 const responsiveImage = (type, className = "u-photo") => ({ src, alt }) => {
-  const defaultWidth = widths[type][widths[type].length - 1];
-
-  const srcset = widths[type]
-    .map((width) => `${src}?nf_resize=fit&w=${width} ${width}w`)
-    .join(", ");
+  const media = mediaQueries[type];
 
   return html` <picture>
-    <source srcset="${srcset}" sizes="${sizes[type]}" />
+    ${media.map(
+      ({ width, mediaQuery }) => html`<source
+        ${mediaQuery ? `media="${mediaQuery}"` : ""}
+        srcset="
+          ${`${src}?nf_resize=fit&w=${width * 2}`} 2x,
+          ${`${src}?nf_resize=fit&w=${width}`} 1x
+        "
+      />`
+    )}
     <img
-      src="${`${src}?nf_resize=fit&w=${defaultWidth}`}"
+      src="${`${src}?nf_resize=fit&w=${media[0].width}`}"
       alt="${alt}"
       class="${className}"
     />
