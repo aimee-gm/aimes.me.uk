@@ -1,7 +1,10 @@
 const { format } = require("date-fns");
 const { URL } = require("url");
 
-const baseUrl = process.env.DEPLOY_PRIME_URL || process.env.URL || "";
+const baseUrl =
+  process.env.BRANCH && process.env.BRANCH !== "master"
+    ? process.env.DEPLOY_PRIME_URL
+    : process.env.URL || "";
 
 const justDateFormat = "EEE, do LLL YYY";
 const londDateFormat = `${justDateFormat} 'at' h:mm aaaa`;
