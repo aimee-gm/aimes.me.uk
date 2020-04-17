@@ -26,7 +26,7 @@ const mediaQueriesToSizes = (type) =>
 
 const mediaQueries = {
   post: [
-    { width: "824px", mediaQuery: "min-width: 1025px" },
+    { width: "824px", mediaQuery: "min-width: 1024px" },
     { width: "696px", mediaQuery: "min-width: 768px" },
     { width: "568px", mediaQuery: "min-width: 645px" },
     { width: "100vw" },
@@ -54,13 +54,14 @@ const responsiveImage = (type, className = "u-photo") => ({ src, alt }) => {
     .map((width) => `${src}?nf_resize=fit&w=${width} ${width}w`)
     .join(", ");
 
-  return html`<img
-    src="${`${src}?nf_resize=fit&w=${defaultWidth}`}"
-    srcset="${srcset}"
-    sizes="${sizes[type]}"
-    alt="${alt}"
-    class="${className}"
-  />`;
+  return html` <picture>
+    <source srcset="${srcset}" sizes="${sizes[type]}" />
+    <img
+      src="${`${src}?nf_resize=fit&w=${defaultWidth}`}"
+      alt="${alt}"
+      class="${className}"
+    />
+  </picture>`;
 };
 
 module.exports = { responsiveImage };
