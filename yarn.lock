@@ -3029,10 +3029,10 @@ html-comment-regex@^1.1.0:
   resolved "https://registry.yarnpkg.com/html-comment-regex/-/html-comment-regex-1.1.2.tgz#97d4688aeb5c81886a364faa0cad1dda14d433a7"
   integrity sha512-P+M65QY2JQ5Y0G9KKdlDpo0zK+/OHptU5AaBwUfAIDJZk1MYf32Frm84EcOytfJE0t5JvkAnKlmjsXDnWzCJmQ==
 
-html-validate@^2.19.0:
-  version "2.20.0"
-  resolved "https://registry.yarnpkg.com/html-validate/-/html-validate-2.20.0.tgz#fb6c4e2d2bd817860254d4bb6a0ebaf9e169e6fa"
-  integrity sha512-6EYNr5AJWrUnNx/1UcwwQbmo5khZUFptbvOset95uE0Ge27W5HcB/1JdGFGavMgsphRqNNlbmtQKUDc6s4TBfg==
+html-validate@^2.20.1:
+  version "2.20.1"
+  resolved "https://registry.yarnpkg.com/html-validate/-/html-validate-2.20.1.tgz#0262edf64e4d9858a1b6029f1aeef8402852e43c"
+  integrity sha512-ltqbGKTOrvOI2wPQ7HT2VH9Kyc5JFqMgi69donu4E+433ksc6uV9Iy5gDeWqnChQXiwoIAJRTyrARun+aSRdwg==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@sidvind/better-ajv-errors" "^0.6.9"
