@@ -1,10 +1,17 @@
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const yaml = require("js-yaml");
+const markdownIt = require("markdown-it");
 
 const eleventyReadMorePlugin = require("./_eleventy/read-more-plugin");
 const shortcodes = require("./_eleventy/shortcodes");
 const transforms = require("./_eleventy/transforms");
 const filters = require("./_eleventy/filters");
+
+const mdLibrary = markdownIt({
+  html: true,
+  breaks: true,
+  linkify: true,
+}).use(require("markdown-it-anchor"));
 
 module.exports = (eleventyConfig) => {
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
@@ -14,6 +21,8 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addDataExtension("yaml", (contents) =>
     yaml.safeLoad(contents)
   );
+
+  eleventyConfig.setLibrary("md", mdLibrary);
 
   Object.keys(shortcodes).forEach((key) =>
     eleventyConfig.addShortcode(key, shortcodes[key])

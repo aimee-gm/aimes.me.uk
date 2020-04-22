@@ -1,6 +1,10 @@
 article.post {
   @apply flex flex-row my-8;
 
+  .post-summary {
+    @apply text-grey italic;
+  }
+
   .post-title {
     @apply text-lg leading-tight mb-1;
     @screen md {
@@ -79,5 +83,38 @@ article.post {
 
   a.read-more-link {
     @apply no-underline;
+  }
+
+  ul,
+  ol {
+    @apply pl-8;
+  }
+
+  ul {
+    @apply list-disc;
+  }
+
+  ol {
+    @apply list-decimal pl-8;
+  }
+
+  table {
+    thead {
+      @apply border-solid border-b border-green;
+    }
+    th {
+      @apply px-4 py-2 font-bold;
+    }
+    td {
+      @apply px-4 py-2;
+    }
+  }
+
+  .post-content {
+    h2,
+    h3,
+    h4 {
+      @apply mt-8 font-bold;
+    }
   }
 }
