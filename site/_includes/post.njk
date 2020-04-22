@@ -1,4 +1,4 @@
-<div class="post h-entry {{ postType }}">
+<article class="post h-entry {{ postType }}">
   <div class="post-icon">
     {% icon icon %}
   </div>
@@ -23,9 +23,7 @@
       </p>
     {% endif %}
     {% if content %}
-      <div class="e-content">
-        {{ content | safe }}
-      </div>
+      {% include "partials/content.njk" %}
     {% endif %}
     <div class="post-meta">
       {% include "partials/permalink.njk" %}
@@ -41,4 +39,4 @@
       </p>
     </div>
   </div>
-</div>
+</article>

@@ -1,0 +1,11 @@
+<div class="e-content post-content">
+  {% if isFeed %}
+    {% readMore content %}
+    <p>
+      <a href="{{ page.url }}" class="read-more-link">Continue reading &rarr;</a>
+    </p>
+    {% endreadMore %}
+  {% else %}
+    {{ content | safe }}
+  {% endif %}
+</div>

@@ -1,12 +1,14 @@
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const yaml = require("js-yaml");
 
+const eleventyReadMorePlugin = require("./_eleventy/read-more-plugin");
 const shortcodes = require("./_eleventy/shortcodes");
 const transforms = require("./_eleventy/transforms");
 const filters = require("./_eleventy/filters");
 
 module.exports = (eleventyConfig) => {
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
+  eleventyConfig.addPlugin(eleventyReadMorePlugin);
   eleventyConfig.setDataDeepMerge(true);
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addDataExtension("yaml", (contents) =>

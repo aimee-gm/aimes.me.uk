@@ -1,4 +1,4 @@
-.post {
+article.post {
   @apply flex flex-row my-8;
 
   .post-title {
@@ -20,7 +20,7 @@
     @apply flex-grow;
   }
 
-  &.note .e-content > p:first-child,
+  &.note .post-content > p:first-child,
   .post-title {
     @apply mt-0;
   }
@@ -29,8 +29,10 @@
     @apply text-grey align-middle;
   }
 
-  .e-content {
-    @apply text-lg;
+  .post-content {
+    p {
+      @apply my-4;
+    }
   }
 
   .post-meta {
@@ -73,5 +75,9 @@
     &:hover {
       @apply underline;
     }
+  }
+
+  a.read-more-link {
+    @apply no-underline;
   }
 }

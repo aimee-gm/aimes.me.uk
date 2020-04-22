@@ -1,7 +1,7 @@
 ---
 layout: base
 ---
-<main>
+<main class="feed">
   {{ content | safe }}
   {% for post in collections[collection] | reverse %}
     {% include "feed-post.njk" %}
