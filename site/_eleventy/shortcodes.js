@@ -1,5 +1,4 @@
 const { html } = require("common-tags");
-const { responsiveImage } = require("./media");
 
 const pageTitle = (pageTitle, siteTitle) => {
   const maxLength = 65 - siteTitle.length - 6;
@@ -32,6 +31,4 @@ module.exports = {
   pageTitle,
   icon,
   externalLink,
-  postResponsiveImage: responsiveImage("post"),
-  profileResponsiveImage: responsiveImage("profile", "u-photo profile-picture"),
 };

@@ -3,6 +3,7 @@ const yaml = require("js-yaml");
 const markdownIt = require("markdown-it");
 
 const eleventyReadMorePlugin = require("./_eleventy/read-more-plugin");
+const responsivePlugin = require("./_eleventy/responsive");
 const shortcodes = require("./_eleventy/shortcodes");
 const transforms = require("./_eleventy/transforms");
 const filters = require("./_eleventy/filters");
@@ -16,6 +17,8 @@ const mdLibrary = markdownIt({
 module.exports = (eleventyConfig) => {
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(eleventyReadMorePlugin);
+  eleventyConfig.addPlugin(responsivePlugin);
+
   eleventyConfig.setDataDeepMerge(true);
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addDataExtension("yaml", (contents) =>
