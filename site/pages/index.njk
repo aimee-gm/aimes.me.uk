@@ -15,8 +15,10 @@ permalink: "{{ pagination.pageNumber | indexPaginationPermalink }}"
   {% include "post-type-tag-links.njk" %}
   <h2>Feed</h2>
   <hr/>
-  {% for post in pagination.items %}
-    {% include "feed-post.njk" %}
-  {% endfor %}
+  <div class="h-feed">
+    {% for post in pagination.items %}
+      {% include "feed-post.njk" %}
+    {% endfor %}
+  </div>
   {% include "pagination.njk" %}
 </main>

@@ -36,7 +36,7 @@
         {% endfor %}
       </p>
       <p class="author p-author h-card">
-        <img src="{{ me.photo.src }}" alt="{{ me.photo.alt }}" class="u-photo"/>
+        <img src="{% resize me.photo.src, 824 %}" alt="{{ me.photo.alt }}" class="u-photo"/>
         <a href="/" class="u-url p-name">{{ me.name }}</a>
       </p>
     </div>

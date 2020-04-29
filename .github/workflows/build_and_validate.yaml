@@ -22,6 +22,8 @@ jobs:
         run: yarn prettier:list
       - name: Build HTML and assets
         run: yarn build
+      - name: Test generated HTML code
+        run: yarn test
       - name: Validate HTML
         run: yarn validate
       - name: Check for *.aimes.me.uk broken links

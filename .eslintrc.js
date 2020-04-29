@@ -4,4 +4,10 @@ module.exports = {
   rules: {
     "arrow-body-style": ["error", "as-needed"],
   },
+  overrides: [
+    {
+      files: "./test/**/*.test.js",
+      env: { mocha: true },
+    },
+  ],
 };

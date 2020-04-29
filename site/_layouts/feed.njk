@@ -3,7 +3,9 @@ layout: base
 ---
 <main class="feed">
   {{ content | safe }}
-  {% for post in collections[collection] | reverse %}
-    {% include "feed-post.njk" %}
-  {% endfor %}
+  <div class="h-feed">
+    {% for post in collections[collection] | reverse %}
+      {% include "feed-post.njk" %}
+    {% endfor %}
+  </div>
 </main>
