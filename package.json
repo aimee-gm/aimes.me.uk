@@ -27,7 +27,7 @@
     "html-validate": "^2.21.0",
     "husky": "^4.2.5",
     "linkinator": "^2.0.6",
-    "lint-staged": "^10.1.6",
+    "lint-staged": "^10.2.0",
     "prettier": "^2.0.4",
     "wsrun": "^5.2.0"
   },
