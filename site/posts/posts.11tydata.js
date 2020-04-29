@@ -2,6 +2,7 @@ const tagIcons = {
   film: "film",
   beach: "beach",
   exhibition: "exhibition",
+  profile_picture: "portrait",
   rsvp: "calendar",
   checkin: "location",
 };
