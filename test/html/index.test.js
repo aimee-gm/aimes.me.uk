@@ -1,9 +1,9 @@
 const { expect } = require("chai");
 
-const { fileToCheerio } = require("../helpers/fileSystem");
+const { fileToJQuery } = require("../helpers/fileSystem");
 
 describe("html // index", () => {
-  const $ = fileToCheerio("index.html");
+  const $ = fileToJQuery("index.html");
 
   describe("h-card", () => {
     it("should have a personal h-card element", () => {

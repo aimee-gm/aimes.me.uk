@@ -1,11 +1,11 @@
 const { expect } = require("chai");
 
-const { fileToCheerio } = require("../helpers/fileSystem");
+const { fileToJQuery } = require("../helpers/fileSystem");
 
 const url = "/2020/03/08/view-from-the-shard/";
 
 describe("html // post", () => {
-  const $ = fileToCheerio(url);
+  const $ = fileToJQuery(url);
 
   describe("h-entry", () => {
     it("should have a permalink", () => {

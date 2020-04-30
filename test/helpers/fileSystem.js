@@ -1,14 +1,16 @@
 const { readFileSync } = require("fs");
 const { resolve } = require("path");
-const cheerio = require("cheerio");
+const { JSDOM } = require("jsdom");
+const jQuery = require("jquery");
 
-exports.fileToCheerio = (path) =>
-  cheerio.load(
-    readFileSync(
-      resolve(
-        __dirname,
-        "../../dist/",
-        path.replace(/^\//, "./").replace(/\/$/, "/index.html")
-      )
+exports.fileToJQuery = (path) => {
+  const html = readFileSync(
+    resolve(
+      __dirname,
+      "../../dist/",
+      path.replace(/^\//, "./").replace(/\/$/, "/index.html")
     )
   );
+  const { window } = new JSDOM(html);
+  return jQuery(window);
+};
