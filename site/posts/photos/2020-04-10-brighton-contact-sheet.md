@@ -10,6 +10,6 @@ tags:
   - film
 ---
 
-Visits to Brighton, [Canary Wharf Winter Lights](https://canarywharf.com/arts-events/events/winter-lights-jan-2020/?instance_id=) and the Barbican in January 2020.
+Visits to Brighton, Canary Wharf Winter Lights and the Barbican in January 2020.
 
 Shot on a Pentax Super ME with Ilford HP 5+ 400 film.
