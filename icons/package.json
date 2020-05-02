@@ -7,7 +7,7 @@
     "start": "svg-symbols ./src > ../site/assets/images/icons.svg",
     "build": "svg-symbols ./src > ../dist/assets/images/icons.svg"
   },
-  "devDependencies": {
+  "dependencies": {
     "svg-symbols": "^1.0.5"
   }
 }

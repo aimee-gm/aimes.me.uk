@@ -1,6 +1,7 @@
 [build]
   publish = "dist"
   command = "yarn build"
+  ignore = "./scripts/netlify_ignore.sh"
 
 [build.environment]
   TZ = "Europe/London"
