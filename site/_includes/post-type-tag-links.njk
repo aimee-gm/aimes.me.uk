@@ -5,7 +5,7 @@
       <a href="{{ type.tag | tagUrl }}">
         {% icon type.icon %}
         {{ type.label }}
-     ({{collections[type.tag].length}})</a>
+     (<span class="count">{{collections[type.tag].length}}</span>)</a>
     {% endfor %}
   </p>
 </div>

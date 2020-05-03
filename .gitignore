@@ -7,3 +7,5 @@ yarn-error.log
 .eslintcache
 site/assets/css
 site/assets/images/icons.svg
+backstop_data/bitmaps_test
+backstop_data/html_report

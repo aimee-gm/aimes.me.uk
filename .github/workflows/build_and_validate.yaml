@@ -48,3 +48,26 @@ jobs:
           name: dist
       - name: Check for broken links
         run: yarn broken-links
+  screenshot_testing:
+    needs: [build_and_validate]
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: Install dependencies
+        run: yarn
+      - name: Download build artifacts
+        uses: actions/download-artifact@v1
+        with:
+          name: dist
+      - name: Check screenshots
+        run: node ./scripts/backstop.js
+      - name: Upload report artifacts
+        uses: actions/upload-artifact@v1
+        if: ${{ failure() }}
+        with:
+          name: report
+          path: backstop_data

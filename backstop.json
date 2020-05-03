@@ -1,0 +1,65 @@
+{
+  "id": "backstop_default",
+  "viewports": [
+    {
+      "label": "iPhone XS",
+      "width": 375,
+      "height": 812
+    },
+    {
+      "label": "iPad",
+      "width": 768,
+      "height": 1024
+    },
+    {
+      "label": "Desktop",
+      "width": 1280,
+      "height": 720
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Layout",
+      "url": "http://localhost:5000",
+      "removeSelectors": ["main"]
+    },
+    {
+      "label": "Post type navigation",
+      "url": "http://localhost:5000",
+      "selectors": [".post-type-tag-links"],
+      "removeSelectors": [".count"]
+    },
+    {
+      "label": "Article",
+      "url": "http://localhost:5000/2020/04/22/developing-film/",
+      "selectors": ["main"]
+    },
+    {
+      "label": "Checkin",
+      "url": "http://localhost:5000/2020/03/08/view-from-the-shard/",
+      "selectors": ["main"]
+    },
+    {
+      "label": "Photo",
+      "url": "http://localhost:5000/2020/04/06/olympic-park-contact-sheet/",
+      "selectors": ["main"]
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "report": ["browser"],
+  "engine": "puppeteer",
+  "engineOptions": {
+    "args": ["--no-sandbox"]
+  },
+  "asyncCaptureLimit": 5,
+  "asyncCompareLimit": 50,
+  "debug": false,
+  "debugWindow": false,
+  "delay": 250
+}
