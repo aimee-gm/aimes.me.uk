@@ -4579,17 +4579,17 @@ linkify-it@^2.0.0:
   dependencies:
     uc.micro "^1.0.1"
 
-linkinator@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/linkinator/-/linkinator-2.1.0.tgz#371dc32b6f8d073db56ec1918ad6e7d72b5023e8"
-  integrity sha512-buik7y3LIPJ4MjKX8sY97EUX1iZrwyz7rZyI/Ma73sheDUBc1QWFsuaD46xcr3QND9BIGxOz7jLpRpmEubPUHg==
+linkinator@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/linkinator/-/linkinator-2.1.1.tgz#eb4212bd1d6c3317f477a33022760ab0d35cc78d"
+  integrity sha512-9RhsrcVwG7MgcO0pJIDHyJnrkRY9h2jJEqRFQIOFVpw1f3n/g0oDBbCfa67XTpj+KMEbEnCkoqeGRUteqMdXOg==
   dependencies:
     chalk "^4.0.0"
     cheerio "^1.0.0-rc.2"
     finalhandler "^1.1.2"
     gaxios "^3.0.0"
     jsonexport "^2.4.1"
-    meow "^6.0.0"
+    meow "^7.0.0"
     p-queue "^6.2.1"
     serve-static "^1.14.1"
     server-destroy "^1.0.1"
@@ -4988,12 +4988,13 @@ meow@5.0.0, meow@^5.0.0:
     trim-newlines "^2.0.0"
     yargs-parser "^10.0.0"
 
-meow@^6.0.0:
-  version "6.1.1"
-  resolved "https://registry.yarnpkg.com/meow/-/meow-6.1.1.tgz#1ad64c4b76b2a24dfb2f635fddcadf320d251467"
-  integrity sha512-3YffViIt2QWgTy6Pale5QpopX/IvU3LPL03jOTqp6pGj3VjesdO/U8CuHMKpnQr4shCNCM5fd5XFFvIIl6JBHg==
+meow@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/meow/-/meow-7.0.0.tgz#2d21adc6df0e1b4659b2b2ce63852d954e5c440a"
+  integrity sha512-He6nRo6zYQtzdm0rUKRjpc+V2uvfUnz76i2zxosiLrAvKhk9dSRqWabL/3fNZv9hpb3PQIJNym0M0pzPZa0pvw==
   dependencies:
     "@types/minimist" "^1.2.0"
+    arrify "^2.0.1"
     camelcase-keys "^6.2.2"
     decamelize-keys "^1.1.0"
     hard-rejection "^2.1.0"
