@@ -1,0 +1,341 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`microformats // post-types should handle RSVPs correctly 1`] = `
+Array [
+  Object {
+    "properties": Object {
+      "author": Array [
+        Object {
+          "properties": Object {
+            "name": Array [
+              "Aimee Gamble-Milner",
+            ],
+            "photo": Array [
+              Object {
+                "alt": "Aimee Gamble-Milner's profile picture",
+                "value": "https://media.aimes.me.uk/2020/02/04/southwark.jpg?nf_resize=fit&w=824",
+              },
+            ],
+            "url": Array [
+              "http://localhost:5000/",
+            ],
+          },
+          "type": Array [
+            "h-card",
+          ],
+          "value": "Aimee Gamble-Milner",
+        },
+      ],
+      "category": Array [
+        "rsvp",
+        "meetup",
+      ],
+      "in-reply-to": Array [
+        "https://www.technottingham.com/events/tech-nottingham-april-2020",
+      ],
+      "published": Array [
+        "2020-04-17T14:02:00.000Z",
+      ],
+      "rsvp": Array [
+        "yes",
+      ],
+      "start": Array [
+        "2020-04-20T17:30:00.000Z",
+      ],
+      "summary": Array [
+        "Building Effective Teams When You're in Different Places",
+      ],
+      "url": Array [
+        "http://localhost:5000/2020/04/17/tech-nottingham/",
+      ],
+    },
+    "type": Array [
+      "h-entry",
+    ],
+  },
+]
+`;
+
+exports[`microformats // post-types should handle bookmarks correctly 1`] = `
+Array [
+  Object {
+    "properties": Object {
+      "author": Array [
+        Object {
+          "properties": Object {
+            "name": Array [
+              "Aimee Gamble-Milner",
+            ],
+            "photo": Array [
+              Object {
+                "alt": "Aimee Gamble-Milner's profile picture",
+                "value": "https://media.aimes.me.uk/2020/02/04/southwark.jpg?nf_resize=fit&w=824",
+              },
+            ],
+            "url": Array [
+              "http://localhost:5000/",
+            ],
+          },
+          "type": Array [
+            "h-card",
+          ],
+          "value": "Aimee Gamble-Milner",
+        },
+      ],
+      "bookmark-of": Array [
+        "http://carto.metro.free.fr/metro-london/",
+      ],
+      "category": Array [
+        "bookmark",
+        "london",
+        "railways",
+      ],
+      "name": Array [
+        "Carto-metro map, London",
+      ],
+      "published": Array [
+        "2020-04-05T07:00:00.000Z",
+      ],
+      "url": Array [
+        "http://localhost:5000/2020/04/05/metro-carto/",
+      ],
+    },
+    "type": Array [
+      "h-entry",
+    ],
+  },
+]
+`;
+
+exports[`microformats // post-types should handle checkins correctly 1`] = `
+Array [
+  Object {
+    "properties": Object {
+      "author": Array [
+        Object {
+          "properties": Object {
+            "name": Array [
+              "Aimee Gamble-Milner",
+            ],
+            "photo": Array [
+              Object {
+                "alt": "Aimee Gamble-Milner's profile picture",
+                "value": "https://media.aimes.me.uk/2020/02/04/southwark.jpg?nf_resize=fit&w=824",
+              },
+            ],
+            "url": Array [
+              "http://localhost:5000/",
+            ],
+          },
+          "type": Array [
+            "h-card",
+          ],
+          "value": "Aimee Gamble-Milner",
+        },
+      ],
+      "category": Array [
+        "checkin",
+      ],
+      "checkin": Array [
+        Object {
+          "properties": Object {
+            "adr": Array [
+              Object {
+                "properties": Object {
+                  "country": Array [
+                    "UK",
+                  ],
+                  "extended-address": Array [
+                    "Bermondsey",
+                  ],
+                  "locality": Array [
+                    "London",
+                  ],
+                },
+                "type": Array [
+                  "h-adr",
+                ],
+                "value": "Bermondsey
+                London
+                UK",
+              },
+            ],
+            "name": Array [
+              "The View from The Shard",
+            ],
+            "url": Array [
+              "https://foursquare.com/v/50eaab7be4b09d1aedafe264",
+            ],
+          },
+          "type": Array [
+            "h-card",
+          ],
+          "value": "https://foursquare.com/v/50eaab7be4b09d1aedafe264",
+        },
+      ],
+      "location": Array [
+        Object {
+          "properties": Object {
+            "adr": Array [
+              Object {
+                "properties": Object {
+                  "country": Array [
+                    "UK",
+                  ],
+                  "extended-address": Array [
+                    "Bermondsey",
+                  ],
+                  "locality": Array [
+                    "London",
+                  ],
+                },
+                "type": Array [
+                  "h-adr",
+                ],
+                "value": "Bermondsey
+                London
+                UK",
+              },
+            ],
+            "name": Array [
+              "The View from The Shard",
+            ],
+            "url": Array [
+              "https://foursquare.com/v/50eaab7be4b09d1aedafe264",
+            ],
+          },
+          "type": Array [
+            "h-card",
+          ],
+          "value": "The View from The Shard",
+        },
+      ],
+      "name": Array [
+        "Checked into The View from The Shard",
+      ],
+      "published": Array [
+        "2020-03-08T15:00:00.000Z",
+      ],
+      "url": Array [
+        "http://localhost:5000/2020/03/08/view-from-the-shard/",
+      ],
+    },
+    "type": Array [
+      "h-entry",
+    ],
+  },
+]
+`;
+
+exports[`microformats // post-types should handle notes correctly 1`] = `
+Array [
+  Object {
+    "properties": Object {
+      "author": Array [
+        Object {
+          "properties": Object {
+            "name": Array [
+              "Aimee Gamble-Milner",
+            ],
+            "photo": Array [
+              Object {
+                "alt": "Aimee Gamble-Milner's profile picture",
+                "value": "https://media.aimes.me.uk/2020/02/04/southwark.jpg?nf_resize=fit&w=824",
+              },
+            ],
+            "url": Array [
+              "http://localhost:5000/",
+            ],
+          },
+          "type": Array [
+            "h-card",
+          ],
+          "value": "Aimee Gamble-Milner",
+        },
+      ],
+      "category": Array [
+        "note",
+        "site",
+      ],
+      "content": Array [
+        Object {
+          "html": "<p>I've just added two new features my site: <a href=\\"http://localhost:5000/tags/bookmark/\\">bookmarks</a> 🔖 and <a href=\\"http://localhost:5000/tags/note/\\">notes</a> 📝. And this is my first note 🙌</p>",
+          "value": "I've just added two new features my site: bookmarks 🔖 and notes 📝. And this is my first note 🙌",
+        },
+      ],
+      "published": Array [
+        "2020-04-05T07:45:00.000Z",
+      ],
+      "url": Array [
+        "http://localhost:5000/2020/04/05/bookmarks/",
+      ],
+    },
+    "type": Array [
+      "h-entry",
+    ],
+  },
+]
+`;
+
+exports[`microformats // post-types should handle photos correctly 1`] = `
+Array [
+  Object {
+    "properties": Object {
+      "author": Array [
+        Object {
+          "properties": Object {
+            "name": Array [
+              "Aimee Gamble-Milner",
+            ],
+            "photo": Array [
+              Object {
+                "alt": "Aimee Gamble-Milner's profile picture",
+                "value": "https://media.aimes.me.uk/2020/02/04/southwark.jpg?nf_resize=fit&w=824",
+              },
+            ],
+            "url": Array [
+              "http://localhost:5000/",
+            ],
+          },
+          "type": Array [
+            "h-card",
+          ],
+          "value": "Aimee Gamble-Milner",
+        },
+      ],
+      "category": Array [
+        "photo",
+        "contact_sheet",
+        "black_and_white",
+        "film",
+      ],
+      "content": Array [
+        Object {
+          "html": "<p>Visits to the Olympic park in March and April 2020.</p>
+                <p>Shot on a Pentax Super ME with Ilford HP 5+ 400 film.</p>",
+          "value": "Visits to the Olympic park in March and April 2020.
+                Shot on a Pentax Super ME with Ilford HP 5+ 400 film.",
+        },
+      ],
+      "name": Array [
+        "Olympic Park Contact Sheet",
+      ],
+      "photo": Array [
+        Object {
+          "alt": "Contact sheet of a black and white film of the Olympic Park",
+          "value": "https://media.aimes.me.uk/2020/04/06/olympic-park.jpg?nf_resize=fit&w=824",
+        },
+      ],
+      "published": Array [
+        "2020-04-06T19:42:00.000Z",
+      ],
+      "url": Array [
+        "http://localhost:5000/2020/04/06/olympic-park-contact-sheet/",
+      ],
+    },
+    "type": Array [
+      "h-entry",
+    ],
+  },
+]
+`;

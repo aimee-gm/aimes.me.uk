@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`microformats // h-card should match parsed snapshot 1`] = `
+Object {
+  "properties": Object {
+    "country-name": Array [
+      "UK",
+    ],
+    "honorific-suffix": Array [
+      "PhD",
+    ],
+    "job-title": Array [
+      "Full-Stack Software Engineer",
+    ],
+    "locality": Array [
+      "London",
+    ],
+    "name": Array [
+      "Aimee Gamble-Milner",
+    ],
+    "org": Array [
+      Object {
+        "properties": Object {
+          "name": Array [
+            "Bulb",
+          ],
+          "url": Array [
+            "https://bulb.co.uk",
+          ],
+        },
+        "type": Array [
+          "h-card",
+        ],
+        "value": "Bulb",
+      },
+    ],
+    "photo": Array [
+      Object {
+        "alt": "Aimee Gamble-Milner's profile picture",
+        "value": "https://media.aimes.me.uk/2020/02/04/southwark.jpg?nf_resize=fit&w=128",
+      },
+    ],
+    "uid": Array [
+      "https://aimes.me.uk",
+    ],
+    "url": Array [
+      "https://aimes.me.uk",
+    ],
+    "x-pronoun-nominative": Array [
+      "she",
+    ],
+    "x-pronoun-oblique": Array [
+      "her",
+    ],
+  },
+  "type": Array [
+    "h-card",
+  ],
+}
+`;

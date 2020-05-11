@@ -1,16 +1,16 @@
 const { readFileSync } = require("fs");
 const { resolve } = require("path");
-const { JSDOM } = require("jsdom");
-const jQuery = require("jquery");
+const { mf2 } = require("microformats-parser");
 
-exports.fileToJQuery = (path) => {
+exports.readMicroformats = async (path) => {
   const html = readFileSync(
     resolve(
       __dirname,
       "../../dist/",
       path.replace(/^\//, "./").replace(/\/$/, "/index.html")
-    )
+    ),
+    "utf8"
   );
-  const { window } = new JSDOM(html);
-  return jQuery(window);
+
+  return mf2(html, { baseUrl: "http://localhost:5000" });
 };
