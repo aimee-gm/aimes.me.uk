@@ -14,10 +14,10 @@
   dependencies:
     dependency-graph "^0.8.1"
 
-"@11ty/eleventy@^0.11.0-beta.4":
-  version "0.11.0-beta.4"
-  resolved "https://registry.yarnpkg.com/@11ty/eleventy/-/eleventy-0.11.0-beta.4.tgz#ed9531f1167c802a1368182b96d0246e91e1dd94"
-  integrity sha512-GOYo3TNLBSVJ/RlmVQUS8Y+RyAyRqWU1MSIvDB2TT0UTpeww/x4Winr3VxzqjngVXWeXiE/d1NPcr+yHUCw88g==
+"@11ty/eleventy@^0.11.0":
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/@11ty/eleventy/-/eleventy-0.11.0.tgz#e9ca1f68d24fe0df5d7449bb4ca4405cae2c0172"
+  integrity sha512-ozkfpmSlhodVoGCNFhBFsNbFxJbaiPYiVGKCeVdsFBTfDLhGyWS8cieNWjsvKyEHWT8OLNSIBvJYv4JxuxTivg==
   dependencies:
     "@11ty/dependency-tree" "^1.0.0"
     browser-sync "^2.26.7"
@@ -34,7 +34,7 @@
     javascript-stringify "^2.0.1"
     liquidjs "^6.4.3"
     lodash "^4.17.15"
-    luxon "^1.23.0"
+    luxon "^1.24.1"
     markdown-it "^10.0.0"
     minimist "^1.2.5"
     moo "^0.5.1"
@@ -4872,10 +4872,10 @@ lru-cache@^4.1.5:
     pseudomap "^1.0.2"
     yallist "^2.1.2"
 
-luxon@^1.23.0:
-  version "1.23.0"
-  resolved "https://registry.yarnpkg.com/luxon/-/luxon-1.23.0.tgz#23b748ad0f2d5494dc4d2878c19278c1e651410c"
-  integrity sha512-+6a/bXsCWrrR8vfbL41iM92es12zwV2Rum/KPkT+ubOZnnU3Sqbqok/FmD1xsWlWN2Y9Hu0fU/vNgU24ns7bpA==
+luxon@^1.24.1:
+  version "1.24.1"
+  resolved "https://registry.yarnpkg.com/luxon/-/luxon-1.24.1.tgz#a8383266131ed4eaed4b5f430f96f3695403a52a"
+  integrity sha512-CgnIMKAWT0ghcuWFfCWBnWGOddM0zu6c4wZAWmD0NN7MZTnro0+833DF6tJep+xlxRPg4KtsYEHYLfTMBQKwYg==
 
 make-dir@^3.0.0:
   version "3.1.0"
