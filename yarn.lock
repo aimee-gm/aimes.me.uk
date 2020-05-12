@@ -4956,10 +4956,10 @@ methods@~1.1.2:
   resolved "https://registry.yarnpkg.com/methods/-/methods-1.1.2.tgz#5529a4d67654134edcc5266656835b0f851afcee"
   integrity sha1-VSmk1nZUE07cxSZmVoNbD4Ua/O4=
 
-microformats-parser@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/microformats-parser/-/microformats-parser-1.0.0.tgz#95f5b9fc78e0f896d5ba7d3ac6a698aca8bc935f"
-  integrity sha512-Kln4/11stBzO/9fAClv6U/IhBzHc671tbiDoAB1hXCci1gSUj6UWa2I5N6C1dlasT3+yELP677TadCzDNN5P/A==
+microformats-parser@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/microformats-parser/-/microformats-parser-1.0.5.tgz#40dea1897e03ddc0ea6ab3eb5985a25d59a2ec7e"
+  integrity sha512-eyXnd/CK4mLbo91ZPIPiziKVrPTR+0A8NhOTSjSiTinaUeG5cULa0jx9pfWSNGk/Ak2G7nALv/vyyamaiIfbgA==
   dependencies:
     parse5 "^6.0.0"
 
