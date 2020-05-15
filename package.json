@@ -34,7 +34,7 @@
     "husky": "^4.2.5",
     "linkinator": "^2.1.1",
     "lint-staged": "^10.2.2",
-    "microformats-parser": "^1.1.1",
+    "microformats-parser": "^1.2.0",
     "mocha": "^7.1.2",
     "prettier": "^2.0.4",
     "wsrun": "^5.2.0"
