@@ -2,7 +2,7 @@
 title: Brighton, Canary Wharf and Barbican Contact Sheet
 date: 2020-04-10T08:04+01:00
 photo:
-  src: https://media.aimes.me.uk/2020/04/10/brighton-canary-wharf-barbican.jpg
+  src: /2020/04/10/brighton-canary-wharf-barbican.jpg
   alt: Contact sheet of a black and white film of a trip to Brighton, Canary Wharf and Barbican
 tags:
   - contact_sheet

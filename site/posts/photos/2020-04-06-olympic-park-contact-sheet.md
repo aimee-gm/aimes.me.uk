@@ -2,7 +2,7 @@
 title: Olympic Park Contact Sheet
 date: 2020-04-06T20:42+01:00
 photo:
-  src: https://media.aimes.me.uk/2020/04/06/olympic-park.jpg
+  src: /2020/04/06/olympic-park.jpg
   alt: Contact sheet of a black and white film of the Olympic Park
 tags:
   - contact_sheet

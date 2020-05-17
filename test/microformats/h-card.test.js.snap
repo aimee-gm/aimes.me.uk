@@ -37,14 +37,14 @@ Object {
     "photo": Array [
       Object {
         "alt": "Aimee Gamble-Milner's profile picture",
-        "value": "https://media.aimes.me.uk/2020/02/04/southwark.jpg?nf_resize=fit&w=128",
+        "value": "https://media.aimes.me.uk/images/2020/02/04/southwark.jpg",
       },
     ],
     "uid": Array [
-      "https://aimes.me.uk",
+      "https://www.aimes.me.uk",
     ],
     "url": Array [
-      "https://aimes.me.uk",
+      "https://www.aimes.me.uk",
     ],
     "x-pronoun-nominative": Array [
       "she",

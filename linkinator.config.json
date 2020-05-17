@@ -1,5 +1,10 @@
 {
   "recurse": true,
-  "skip": ["indieauth.com", "aperture.p3k.io", "foursquare.com"],
+  "skip": [
+    "indieauth.com",
+    "aperture.p3k.io",
+    "foursquare.com",
+    "cloudinary.com"
+  ],
   "concurrency": 20
 }

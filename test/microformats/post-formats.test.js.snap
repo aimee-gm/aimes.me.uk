@@ -13,11 +13,11 @@ Array [
             "photo": Array [
               Object {
                 "alt": "Aimee Gamble-Milner's profile picture",
-                "value": "https://media.aimes.me.uk/2020/02/04/southwark.jpg?nf_resize=fit&w=824",
+                "value": "https://media.aimes.me.uk/images/2020/02/04/southwark.jpg",
               },
             ],
             "url": Array [
-              "http://localhost:5000/",
+              "https://www.aimes.me.uk",
             ],
           },
           "type": Array [
@@ -69,11 +69,11 @@ Array [
             "photo": Array [
               Object {
                 "alt": "Aimee Gamble-Milner's profile picture",
-                "value": "https://media.aimes.me.uk/2020/02/04/southwark.jpg?nf_resize=fit&w=824",
+                "value": "https://media.aimes.me.uk/images/2020/02/04/southwark.jpg",
               },
             ],
             "url": Array [
-              "http://localhost:5000/",
+              "https://www.aimes.me.uk",
             ],
           },
           "type": Array [
@@ -120,11 +120,11 @@ Array [
             "photo": Array [
               Object {
                 "alt": "Aimee Gamble-Milner's profile picture",
-                "value": "https://media.aimes.me.uk/2020/02/04/southwark.jpg?nf_resize=fit&w=824",
+                "value": "https://media.aimes.me.uk/images/2020/02/04/southwark.jpg",
               },
             ],
             "url": Array [
-              "http://localhost:5000/",
+              "https://www.aimes.me.uk",
             ],
           },
           "type": Array [
@@ -240,11 +240,11 @@ Array [
             "photo": Array [
               Object {
                 "alt": "Aimee Gamble-Milner's profile picture",
-                "value": "https://media.aimes.me.uk/2020/02/04/southwark.jpg?nf_resize=fit&w=824",
+                "value": "https://media.aimes.me.uk/images/2020/02/04/southwark.jpg",
               },
             ],
             "url": Array [
-              "http://localhost:5000/",
+              "https://www.aimes.me.uk",
             ],
           },
           "type": Array [
@@ -290,11 +290,11 @@ Array [
             "photo": Array [
               Object {
                 "alt": "Aimee Gamble-Milner's profile picture",
-                "value": "https://media.aimes.me.uk/2020/02/04/southwark.jpg?nf_resize=fit&w=824",
+                "value": "https://media.aimes.me.uk/images/2020/02/04/southwark.jpg",
               },
             ],
             "url": Array [
-              "http://localhost:5000/",
+              "https://www.aimes.me.uk",
             ],
           },
           "type": Array [
@@ -323,7 +323,7 @@ Array [
       "photo": Array [
         Object {
           "alt": "Contact sheet of a black and white film of the Olympic Park",
-          "value": "https://media.aimes.me.uk/2020/04/06/olympic-park.jpg?nf_resize=fit&w=824",
+          "value": "https://media.aimes.me.uk/images/2020/04/06/olympic-park.jpg",
         },
       ],
       "published": Array [

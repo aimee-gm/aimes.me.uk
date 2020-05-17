@@ -24,7 +24,7 @@
     <picture>
       <source media="(min-width: 768px)" srcset="{% resize me.photo.src, 256 %} 2x, {% resize me.photo.src, 128 %} 1x"/>
       <source srcset="{% resize me.photo.src, 192 %} 2x, {% resize me.photo.src, 96 %} 1x"/>
-      <img src="{% resize me.photo.src, 128 %}" alt="{{ me.photo.alt }}" class="u-photo profile-picture"/>
+      <img src="{% fallback me.photo.src %}" alt="{{ me.photo.alt }}" class="u-photo profile-picture"/>
     </picture>
   </div>
 </div>
