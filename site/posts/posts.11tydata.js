@@ -57,8 +57,6 @@ module.exports = {
       if (data.reply && data.reply.rsvp) {
         return `RSVP ${data.reply.rsvp} for ${data.reply.name}`;
       }
-
-      throw new Error(`Cannot find title for post ${data.page.url}`);
     },
   },
 };
