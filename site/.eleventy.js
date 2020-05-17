@@ -2,7 +2,7 @@ const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const yaml = require("js-yaml");
 const markdownIt = require("markdown-it");
 
-const eleventyReadMorePlugin = require("./_eleventy/read-more-plugin");
+const eleventyReadMorePlugin = require("eleventy-plugin-read-more");
 const responsivePlugin = require("./_eleventy/responsive");
 const shortcodes = require("./_eleventy/shortcodes");
 const transforms = require("./_eleventy/transforms");
