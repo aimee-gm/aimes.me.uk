@@ -8,9 +8,9 @@ tags:
   - black_and_white
 ---
 
-Before the recent Coronavirus lockdown began I started to shoot film using my Dad's old Pentax Super ME SLR camera, and I started to learn how to develop the film myself.
+Before the recent Coronavirus lock-down began I started to shoot film using my Dad's old Pentax Super ME SLR camera, and I started to learn how to develop the film myself.
 
-With the lockdown looming, I decided to purchase a starter kit to develop film at home. And as part of that, I've decided to share my method, findings and extra information on doing it here.
+With the lock-down looming, I decided to purchase a starter kit to develop film at home. And as part of that, I've decided to share my method, findings and extra information on doing it here.
 
 <!--more-->
 
@@ -24,7 +24,6 @@ With the lockdown looming, I decided to purchase a starter kit to develop film a
   - [Chemical times](#chemical-times)
   - [Washing the film](#washing-the-film)
 - [Finishing up](#finishing-up)
-  - [Cutting up the film](#cutting-up-the-film)
 - [Other information](#other-information)
   - [Reusing chemicals](#reusing-chemicals)
   - [Determining fixer strength](#determining-fixer-strength)
@@ -69,7 +68,7 @@ _This article assumes you've managed to safely load the film(s) onto a reel and 
 
 #### General procedure
 
-For devloper, stop and fixer (in that order):
+For developer, stop and fixer (in that order):
 
 1. Add the pre-diluted chemical to the processing tank
 1. Invert the tank 4 times over 10 seconds
@@ -104,10 +103,7 @@ Times are given for 20&deg;C (25&deg;C) at the above dilutions.
 1. Remove the reel and hang. A shower curtain rail is useful for this
 1. Wipe off any excess water using the film squeegee
 1. Leave to dry!
-
-#### Cutting up the film
-
-1. Cut the film into stips of 6
+1. Cut the film into strips of 6
 1. Load into a negative storage sleeve
 
 Then you'll be ready to scan or print your negatives.

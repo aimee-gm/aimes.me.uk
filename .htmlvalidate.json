@@ -2,6 +2,7 @@
   "extends": ["htmlvalidate:recommended"],
   "rules": {
     "no-trailing-whitespace": "off",
-    "void-style": ["error", { "style": "selfclosing" }]
+    "void-style": "off",
+    "no-raw-characters": "off"
   }
 }

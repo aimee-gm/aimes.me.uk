@@ -5,6 +5,7 @@ const tagIcons = {
   profile_picture: "portrait",
   rsvp: "calendar",
   checkin: "location",
+  article: "note",
 };
 
 const tagsToProcess = Object.keys(tagIcons);

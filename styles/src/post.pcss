@@ -15,6 +15,10 @@ article.post {
   > .post-icon {
     @apply mr-4 text-2xl flex-shrink-0;
 
+    .icon {
+      @apply align-text-top;
+    }
+
     a {
       @apply text-black;
     }
@@ -22,21 +26,12 @@ article.post {
 
   > .post-details {
     @apply flex-grow;
-  }
 
-  &.note .post-content > p:first-child,
-  .post-title {
-    @apply mt-0;
+    max-width: calc(100% - 2.5rem);
   }
 
   p .icon {
     @apply text-grey align-middle;
-  }
-
-  .post-content {
-    p {
-      @apply my-4;
-    }
   }
 
   .post-meta {
@@ -111,10 +106,23 @@ article.post {
   }
 
   .post-content {
+    h2 {
+      @apply mt-8 mb-4 border-solid border-b border-lightGrey;
+    }
+
     h2,
     h3,
     h4 {
-      @apply mt-8 font-bold;
+      @apply mt-8 mb-4 border-solid border-b border-codeBg;
     }
+
+    p {
+      @apply my-4;
+    }
+  }
+
+  &.note .post-content > p:first-child,
+  .post-title {
+    @apply mt-0;
   }
 }

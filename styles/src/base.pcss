@@ -31,14 +31,14 @@ p {
 .icon {
   width: 1em;
   height: 1em;
-  @apply inline-block fill-current align-text-top;
+  @apply inline-block fill-current mb-1;
 }
 
 .navbar-top {
-  @apply text-white flex items-center;
+  @apply text-white flex items-center justify-between;
 
   .my-site-name {
-    @apply flex-grow font-serif text-2xl;
+    @apply font-serif text-2xl;
   }
 
   ul {
@@ -117,4 +117,13 @@ hr {
   .credits {
     @apply text-center opacity-50 text-sm;
   }
+}
+
+code,
+pre {
+  @apply font-serif bg-codeBg;
+}
+
+code {
+  @apply inline-block px-1 rounded-sm;
 }

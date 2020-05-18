@@ -1,4 +1,5 @@
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const yaml = require("js-yaml");
 const markdownIt = require("markdown-it");
 
@@ -15,6 +16,7 @@ const mdLibrary = markdownIt({
 }).use(require("markdown-it-anchor"));
 
 module.exports = (eleventyConfig) => {
+  eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(eleventyReadMorePlugin);
   eleventyConfig.addPlugin(responsivePlugin);

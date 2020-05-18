@@ -10,6 +10,7 @@ module.exports = {
       grey: "#617073",
       lightGrey: "#dadada",
       bodyBg: "#f2f2f2",
+      codeBg: "#ececec",
     },
     fontFamily: {
       sans: ['"PT Sans"', "sans-serif"],
