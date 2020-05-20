@@ -56,4 +56,16 @@ describe("microformats // post-types", () => {
 
     expect(parsed.items).to.matchSnapshot();
   });
+
+  it("should handle syndication links", async () => {
+    const parsed = await readMicroformats(
+      "/2020/05/18/writing-microformats-parser/"
+    );
+
+    expect(
+      parsed.items
+    ).to.have.deep.nested.property("[0].properties.syndication", [
+      "https://news.indieweb.org/en",
+    ]);
+  });
 });

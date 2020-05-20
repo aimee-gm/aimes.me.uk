@@ -5,6 +5,9 @@ date: 2020-05-18 16:56:11+01:00
 tags:
   - microformats
   - indieweb
+syndication:
+  - name: IndieNews
+    url: https://news.indieweb.org/en
 ---
 
 This site hasn't been going for too long (at the time of writing, at least) - but I've always been inspired to include microformats as part of it. This was triggered by [Jamie Tanna](https://www.jvt.me)'s post on [marking up pronoun information](https://www.jvt.me/posts/2019/04/10/pronouns-microformats/) in HTML. I've included marked-up data in my bio and feed, but I would like to also be able to verify this data is correct and as I expect while I'm making changes.

@@ -27,6 +27,9 @@
     {% if content %}
       {% include "partials/content.njk" %}
     {% endif %}
+    {% if syndication and not isFeed %}
+      {% include "partials/syndication.njk" %}
+    {% endif %}
     <div class="post-meta">
       {% include "partials/permalink.njk" %}
       <p class="tags">

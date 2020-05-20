@@ -1,0 +1,7 @@
+<p class="syndication">
+  Also posted on 
+  {% for item in syndication %}
+    <a class="u-syndication" href="{{ item.url }}">{{ item.name }}</a>
+    {% if not loop.last %}, {% endif %}
+  {% endfor %}
+</p>
