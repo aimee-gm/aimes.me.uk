@@ -1,6 +1,6 @@
 name: Build and validate website
 
-on: [push]
+on: [pull_request]
 
 env:
   TZ: Europe/London
