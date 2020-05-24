@@ -1,0 +1,32 @@
+{% if page.url === "/" %}
+  {% set title = site.name %}
+  {% set summary = site.description %}
+{% endif %}
+
+{% if title %}
+  <meta property="twitter:creator" content="@aimeegamble"/>
+  <meta property="twitter:site" content="@aimeegamble"/>
+  <meta property="twitter:card" content="summary"/>
+
+  <meta property="og:url" content="{{ page.url | canonicalUrl }}"/>
+  <meta property="og:locale" content="en_GB"/>
+  <meta property="og:title" content="{{ title }}"/>
+  <meta property="og:site_name" content="{{ site.name }}"/>
+
+  {% if postType %}
+    <meta property="og:type" content="blog"/>
+  {% endif %}
+  {% if summary %}
+    <meta property="og:description" content="{{ summary }}"/>
+  {% endif %}
+  {% if photo.src %}
+    <meta property="twitter:image" content="{% fallback photo.src %}"/>
+    <meta property="og:image:url" content="{% fallback photo.src %}"/>
+  {% else %}
+    <meta property="twitter:image" content="{% fallback me.photo.src %}"/>
+    <meta property="og:image:url" content="{% fallback me.photo.src %}"/>
+  {% endif %}
+  {% if photo.alt %}
+    <meta property="og:image:alt" content="{{ photo.alt }}"/>
+  {% endif %}
+{% endif %}
