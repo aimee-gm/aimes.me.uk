@@ -6,6 +6,8 @@ yarn-error.log
 .DS_Store
 .eslintcache
 site/assets/css
+site/_includes/css/*
+!site/_includes/css/syntax.css
 site/assets/images/icons.svg
 backstop_data/bitmaps_test
 backstop_data/html_report

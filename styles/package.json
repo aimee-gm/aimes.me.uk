@@ -5,8 +5,8 @@
   "private": true,
   "author": "Aimee Gamble-Milner",
   "scripts": {
-    "start": "postcss src/index.pcss -o ../site/assets/css/style.css --verbose -w",
-    "build": "postcss src/index.pcss -o ../dist/assets/css/style.css --verbose"
+    "start": "yarn build -w",
+    "build": "postcss src/*.pcss --dir ../site/_includes/css/ --ext css --verbose"
   },
   "dependencies": {
     "cssnano": "^4.1.10",

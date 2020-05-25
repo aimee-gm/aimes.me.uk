@@ -9,13 +9,9 @@ const plugins = [
   }),
   require("cssnano"),
   customMedia({
-    importFrom: "./src/media.pcss",
+    importFrom: "./src/includes/media.pcss",
   }),
 ];
-
-if (process.env.CI || process.env.NETLIFY) {
-  plugins.push(require("cssnano"));
-}
 
 module.exports = {
   plugins,

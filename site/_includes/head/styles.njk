@@ -1,0 +1,14 @@
+<style>
+  {% include "css/base.css" %}
+  {% if styles %}
+    {% if styles.includes("home") %}
+      {% include "css/home.css" %}
+    {% endif %}
+    {% if styles.includes("post") %}
+      {% include "css/post.css" %}
+    {% endif %}
+    {% if styles.includes("syntax") %}
+      {% include "css/syntax.css" %}
+    {% endif %}
+  {% endif %}
+</style>
