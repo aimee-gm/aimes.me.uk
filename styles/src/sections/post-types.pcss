@@ -1,17 +1,24 @@
 .post-type-tag-links {
-  @apply px-4 py-2 border border-lightGrey rounded-md mb-8;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--light-grey);
+  border-radius: var(--rounding);
+  margin-bottom: 2rem;
 
-  p {
-    @screen md {
-      @apply flex justify-between flex-row;
+  a {
+    display: block;
+    margin: 0.5rem 0;
+    text-decoration: none;
+
+    .icon {
+      color: var(--grey);
     }
   }
 
-  a {
-    @apply block my-2 no-underline;
-
-    .icon {
-      @apply text-grey;
+  @media (--viewport-md) {
+    p {
+      display: flex;
+      justify-content: space-between;
+      flex: grow;
     }
   }
 }

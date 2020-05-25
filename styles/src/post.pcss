@@ -1,53 +1,63 @@
 article.post {
-  @apply flex flex-row my-8;
+  display: flex;
+  margin: 2em 0;
+  flex-direction: row;
 
   .post-summary {
-    @apply text-grey italic;
+    color: var(--grey);
+    font-style: italic;
   }
 
   .post-title {
-    @apply text-lg leading-tight mb-1;
-    @screen md {
-      @apply text-xl;
+    font-size: var(--size-lg);
+    margin-bottom: 0.25rem;
+    line-height: 1.25;
+    @media (--viewport-md) {
+      font-size: var(--size-h3);
     }
   }
 
   > .post-icon {
-    @apply mr-4 text-2xl flex-shrink-0;
+    margin-right: 1rem;
+    font-size: var(--size-h2);
+    flex-shrink: 0;
 
     .icon {
-      @apply align-text-top;
+      vertical-align: text-top;
     }
 
     a {
-      @apply text-black;
+      color: var(--black);
     }
   }
 
   > .post-details {
-    @apply flex-grow;
-
+    flex-grow: 1;
     max-width: calc(100% - 2.5rem);
   }
 
   p .icon {
-    @apply text-grey align-middle;
+    color: var(--grey);
+    vertical-align: middle;
   }
 
   .post-meta {
-    @apply text-grey my-0;
+    color: var(--grey);
 
-    @screen md {
-      @apply flex flex-row justify-between my-2;
+    @media (--viewport-md) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0.5rem 0;
 
       p {
-        @apply my-0;
+        margin: 0;
       }
     }
   }
 
   .tags a {
-    @apply ml-1;
+    margin-left: 0.25rem;
   }
 
   .author {
@@ -55,78 +65,53 @@ article.post {
   }
 
   .post-meta a {
-    @apply text-grey;
+    color: var(--grey);
 
     &:hover {
-      @apply text-green;
+      color: var(--green);
     }
   }
 
   .hostname,
   .checkin .address,
   .reply-date {
-    @apply text-grey mt-0 text-sm;
+    color: var(--grey);
+    margin-top: 0;
+    font-size: var(--size-sm);
   }
 
   .permalink,
   .tags a {
-    @apply no-underline;
+    text-decoration: none;
     &:hover {
-      @apply underline;
+      text-decoration: underline;
     }
   }
 
   a.read-more-link {
-    @apply no-underline;
-  }
-
-  ul,
-  ol {
-    @apply pl-8;
-  }
-
-  ul {
-    @apply list-disc;
-  }
-
-  ol {
-    @apply list-decimal pl-8;
-  }
-
-  table {
-    thead {
-      @apply border-solid border-b border-green;
-    }
-    th {
-      @apply px-4 py-2 font-bold;
-    }
-    td {
-      @apply px-4 py-2;
-    }
+    text-decoration: none;
   }
 
   .post-content {
-    h2 {
-      @apply mt-8 mb-4 border-solid border-b border-lightGrey;
-    }
-
     h2,
     h3,
     h4 {
-      @apply mt-8 mb-4 border-solid border-b border-codeBg;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid var(--bg-code);
     }
 
     p {
-      @apply my-4;
+      margin: 1rem 0;
     }
   }
 
   &.note .post-content > p:first-child,
   .post-title {
-    @apply mt-0;
+    margin-top: 0;
   }
 
   .syndication {
-    @apply text-grey;
+    color: var(--grey);
   }
 }

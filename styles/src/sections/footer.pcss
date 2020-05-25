@@ -1,0 +1,47 @@
+.site-footer {
+  .container {
+    padding: 2rem 1rem;
+    align-items: center;
+  }
+
+  .footer-links {
+    margin-bottom: 2rem;
+  }
+
+  .copyright {
+    flex-grow: 1;
+    padding: 0.5rem 0;
+  }
+
+  .social {
+    white-space: nowrap;
+
+    li {
+      display: block;
+      margin-left: 1rem;
+    }
+
+    a {
+      display: inline-block;
+      padding: 0.25rem 0.5rem;
+      border-radius: var(--rounding);
+      &:hover {
+        background: var(--blue);
+        color: var(--white);
+      }
+    }
+  }
+
+  .credits {
+    text-align: center;
+    opacity: 0.5;
+    font-size: var(--size-sm);
+  }
+
+  @media (--viewport-sm) {
+    .footer-links,
+    .social {
+      display: flex;
+    }
+  }
+}

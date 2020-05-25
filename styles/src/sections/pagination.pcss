@@ -1,46 +1,51 @@
 .pagination {
-  @apply mt-8 text-center px-4 py-2 border border-lightGrey rounded-md;
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--light-grey);
+  border-radius: var(--rounding);
+  text-align: center;
 
   h2 {
-    @apply hidden;
+    display: none;
   }
 
   > a,
   ol li {
-    @apply inline-block;
+    display: inline-block;
   }
 
   a {
-    @apply p-1;
+    padding: 0.25rem;
   }
 
   > a {
-    @apply mx-1;
-  }
-
-  .page {
-    @screen sm {
-      @apply hidden;
-    }
+    margin: 0 0.25rem;
   }
 
   ol {
-    @apply hidden;
-
-    @screen sm {
-      @apply inline-block;
-    }
+    display: none;
 
     li a {
-      @apply py-1 px-2;
+      padding: 0.25rem 0.5rem;
     }
 
     li + li {
-      @apply ml-1;
+      margin-left: 0.25rem;
     }
   }
 
   a[aria-current] {
-    @apply text-black no-underline;
+    color: var(--black);
+    text-decoration: none;
+  }
+
+  @media (--viewport-sm) {
+    .page {
+      display: none;
+    }
+
+    ol {
+      display: inline-block;
+    }
   }
 }

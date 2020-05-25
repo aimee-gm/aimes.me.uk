@@ -4,8 +4,8 @@
   "description": "Aimee's personal website",
   "private": true,
   "workspaces": [
-    "site",
     "styles",
+    "site",
     "icons"
   ],
   "scripts": {

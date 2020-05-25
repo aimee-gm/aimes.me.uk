@@ -17,6 +17,11 @@ app.on("ready", async () => {
       process.exit(0);
     });
   } catch (err) {
+    if (process.argv.includes("approve")) {
+      await backstop("approve");
+      await backstop("test");
+    }
+
     server.close(() => {
       process.exit(1);
     });
