@@ -5,12 +5,13 @@
   }
 
   .footer-links {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
 
   .copyright {
     flex-grow: 1;
-    padding: 0.5rem 0;
+    padding: 0.25rem 0;
+    margin-bottom: 0.5rem;
   }
 
   .social {
@@ -18,7 +19,7 @@
 
     li {
       display: block;
-      margin-left: 1rem;
+      margin-bottom: 0.5rem;
     }
 
     a {
@@ -39,9 +40,17 @@
   }
 
   @media (--viewport-sm) {
-    .footer-links,
+    .footer-links {
+      display: flex;
+    }
+  }
+
+  @media (--viewport-md) {
     .social {
       display: flex;
+      li {
+        margin-left: 1rem;
+      }
     }
   }
 }
