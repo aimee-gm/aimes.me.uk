@@ -39,7 +39,7 @@
         {% endfor %}
       </p>
       <p class="author p-author h-card">
-        <img src="{% fallback me.photo.src %}" alt="{{ me.photo.alt }}" class="u-photo"/>
+        <data class="u-photo" value="{% fallback me.photo.src %}"></data>
         <a href="{{ site.url }}" class="u-url p-name">{{ me.name }}</a>
       </p>
     </div>

@@ -13,3 +13,11 @@
     cache-control = '''
     public,
     max-age=31536000'''
+
+[[headers]]
+  for = "/assets/images/*"
+  [headers.values]
+    #  Multi-value headers are expressed with multi-line strings
+    cache-control = '''
+    public,
+    max-age=300'''
