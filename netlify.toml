@@ -5,3 +5,11 @@
 
 [build.environment]
   TZ = "Europe/London"
+
+[[headers]]
+  for = "/assets/fonts/*"
+  [headers.values]
+    #  Multi-value headers are expressed with multi-line strings
+    cache-control = '''
+    public,
+    max-age=31536000'''
