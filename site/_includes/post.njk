@@ -19,9 +19,9 @@
     {% endif %}
     {% if photo %}
       <p>
-        {% responsivePicture "post" %}
+        {% responsive %}
         <img src="{{ photo.src }}" alt="{{ photo.alt }}" class="u-photo"/>
-        {% endresponsivePicture %}
+        {% endresponsive %}
       </p>
     {% endif %}
     {% if content %}
