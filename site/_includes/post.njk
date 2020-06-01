@@ -24,6 +24,9 @@
         {% endresponsive %}
       </p>
     {% endif %}
+    {% if activity %}
+      {% include "partials/activity.njk" %}
+    {% endif %}
     {% if content %}
       {% include "partials/content.njk" %}
     {% endif %}

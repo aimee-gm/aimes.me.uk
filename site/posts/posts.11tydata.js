@@ -8,7 +8,12 @@ const tagIcons = {
   article: "note",
 };
 
+const activityIcons = {
+  cycling: "cycling",
+};
+
 const tagsToProcess = Object.keys(tagIcons);
+const activityTags = Object.keys(activityIcons);
 
 module.exports = {
   layout: "post",
@@ -28,6 +33,14 @@ module.exports = {
         for (const tag of tagsToProcess) {
           if (data.tags.includes(tag)) {
             return tagIcons[tag];
+          }
+        }
+
+        if (data.postType === "activity") {
+          for (const tag of activityTags) {
+            if (data.tags.includes(tag)) {
+              return activityIcons[tag];
+            }
           }
         }
       }
