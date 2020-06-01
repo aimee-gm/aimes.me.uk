@@ -1,3 +1,6 @@
+- tag: activity
+  label: Activities
+  icon: cycling
 - tag: article
   label: Blog posts
   icon: note

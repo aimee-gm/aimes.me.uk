@@ -48,6 +48,11 @@
       "label": "Photo",
       "url": "http://localhost:5000/2020/04/06/olympic-park-contact-sheet/",
       "selectors": ["main"]
+    },
+    {
+      "label": "activity",
+      "url": "http://localhost:5000/2020/06/01/road-cycle/",
+      "selectors": ["main"]
     }
   ],
   "paths": {

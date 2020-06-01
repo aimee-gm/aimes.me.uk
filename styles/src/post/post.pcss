@@ -114,4 +114,36 @@ article.post {
   .syndication {
     color: var(--grey);
   }
+
+  ul.activity-stats {
+    margin-top: 0.5rem;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      display: inline-block;
+      width: 50%;
+      text-align: center;
+
+      @media (--viewport-sm) {
+        width: 25%;
+      }
+    }
+
+    .label {
+      display: block;
+      color: var(--grey);
+      font-size: var(--size-sm);
+    }
+
+    .value {
+      display: block;
+      font-size: var(--size-lg);
+
+      @media (--viewport-sm) {
+        font-size: var(--size-xl);
+      }
+    }
+  }
 }

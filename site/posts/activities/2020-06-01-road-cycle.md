@@ -1,6 +1,6 @@
 ---
 title: Pootle North
-date: 2020-06-01 14:49:00+01:00
+date: 2020-06-01 14:49:05+01:00
 activity:
   distance: 33.66km
   elevation: 206m
@@ -11,6 +11,7 @@ activity:
     average: 21.2km/h
     max: 49.3km/h
   temperature: 25°C
+  bike: Belle
 syndication:
   - name: Strava
     url: https://www.strava.com/activities/3547770001
