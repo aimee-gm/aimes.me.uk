@@ -30,7 +30,12 @@ module.exports = (eleventyConfig) => {
     ],
     resize: (src, size) =>
       new URL(
-        path.join(`/aimes/image/upload/w_${size}%2Cq_auto/`, "images", src),
+        path.join(
+          "/aimes/image/upload/",
+          src.includes("jpg") ? `w_${size}%2Cq_auto` : `w_${size}`,
+          "images",
+          src
+        ),
         "https://res.cloudinary.com"
       ).toString(),
     fallback: (src) =>
