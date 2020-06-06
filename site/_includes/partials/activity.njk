@@ -16,8 +16,8 @@
     <span class="value">{{ activity.elevation }}m</span>
   </li>
   <li>
-    <span class="label">Temperature</span>
-    <span class="value">{{ activity.temperature }}&deg;C</span>
+    <span class="label">Bike</span>
+    <span class="value">{{ activity.bike }}</span>
   </li>
   <li>
     <span class="label">Elapsed time</span>
@@ -27,8 +27,10 @@
     <span class="label">Speed (max)</span>
     <span class="value">{{ activity.speed.max }}km/h</span>
   </li>
-  <li>
-    <span class="label">Bike</span>
-    <span class="value">{{ activity.bike }}</span>
-  </li>
+  {% if activity.temperature !== null %}
+    <li>
+      <span class="label">Temperature</span>
+      <span class="value">{{ activity.temperature }}&deg;C</span>
+    </li>
+  {% endif %}
 </ul>
