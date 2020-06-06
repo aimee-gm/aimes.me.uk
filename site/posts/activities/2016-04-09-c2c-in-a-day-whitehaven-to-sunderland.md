@@ -8,8 +8,8 @@ activity:
   elevation: 3459.2
   finish: 2016-04-09T20:31:49.000Z
   time:
-    moving: 10h 54m
-    elapsed: 14h 7m
+    moving: 39253
+    elapsed: 50828
   speed:
     average: 19.4
     max: 58.6

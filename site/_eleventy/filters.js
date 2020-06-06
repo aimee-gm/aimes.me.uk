@@ -7,12 +7,12 @@ const baseUrl =
     : process.env.URL || "";
 
 const justDateFormat = "EEE, do LLL YYY";
-const londDateFormat = `${justDateFormat} 'at' h:mm aaaa`;
+const longDateFormat = `${justDateFormat} 'at' h:mm aaaa`;
 
 const indexPaginationPermalink = (pageNumber) =>
   pageNumber ? `/page/${pageNumber + 1}/` : "/";
 const isoDate = (date) => date.toISOString();
-const longDate = (date) => format(date, londDateFormat);
+const longDate = (date) => format(date, longDateFormat);
 const visibleTags = (tags) => tags.filter((tag) => !["posts"].includes(tag));
 const hostname = (url) => new URL(url).hostname;
 const toDate = (str) => str && new Date(str);
@@ -32,6 +32,22 @@ const rsvpText = (rsvp) => {
   }
 };
 
+const duration = (sec) => {
+  const seconds = sec % 60;
+  const minutes = Math.floor(sec / 60) % 60;
+  const hours = Math.floor(sec / 3600);
+
+  if (hours) {
+    return `${hours}h ${minutes}m`;
+  }
+
+  if (minutes) {
+    return `${minutes}m ${seconds}s`;
+  }
+
+  return `${seconds}s`;
+};
+
 module.exports = {
   isoDate,
   longDate,
@@ -43,4 +59,5 @@ module.exports = {
   tagUrl,
   canonicalUrl,
   indexPaginationPermalink,
+  duration,
 };

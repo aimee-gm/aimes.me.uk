@@ -5,7 +5,7 @@
   </li>
   <li>
     <span class="label">Moving time</span>
-    <span class="value">{{ activity.time.moving }}</span>
+    <span class="value">{{ activity.time.moving | duration }}</span>
   </li>
   <li>
     <span class="label">Speed (avg)</span>
@@ -21,7 +21,7 @@
   </li>
   <li>
     <span class="label">Elapsed time</span>
-    <span class="value">{{ activity.time.elapsed }}</span>
+    <span class="value">{{ activity.time.elapsed | duration }}</span>
   </li>
   <li>
     <span class="label">Speed (max)</span>

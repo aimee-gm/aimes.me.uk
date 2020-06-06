@@ -8,8 +8,8 @@ activity:
   elevation: 206
   finish: 2020-06-01T15:41:46.000Z
   time:
-    moving: 1h 35m
-    elapsed: 1h 52m
+    moving: 5708
+    elapsed: 6761
   speed:
     average: 21.2
     max: 49.3
