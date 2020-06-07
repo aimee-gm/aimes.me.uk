@@ -4,7 +4,8 @@
     "indieauth.com",
     "aperture.p3k.io",
     "foursquare.com",
-    "cloudinary.com"
+    "cloudinary.com",
+    "strava.com"
   ],
   "concurrency": 20
 }
