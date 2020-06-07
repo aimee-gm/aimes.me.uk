@@ -16,7 +16,7 @@
     "test:update": "CHAI_JEST_SNAPSHOT_UPDATE_ALL=true yarn test",
     "validate": "html-validate './dist/**/*.html'",
     "broken-links": "linkinator ./dist",
-    "prettier:list": "yarn prettier '**/*.{js,svg,md,yaml,yml}' --list-different",
+    "prettier:list": "yarn prettier '**/*.{js,svg,yaml,yml}' --list-different",
     "prettier:fix": "yarn prettier '**/*.{js,svg,md,yaml,yml}' --write"
   },
   "devDependencies": {

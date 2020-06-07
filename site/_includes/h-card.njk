@@ -11,8 +11,7 @@
       My current home is in <span class="p-locality">{{me.locality.city}}</span>,
       <span class="p-country-name">{{me.locality.country}}</span> and the nearest tube
       station is {% icon "tube" %}
-      {% externalLink me.tube.url,
-      me.tube.station %}.
+      {{ me.tube.station }}.
     </p>
     <p>
       I'm using this site to log what I've started to do since I started to live in London,

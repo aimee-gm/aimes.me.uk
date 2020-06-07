@@ -10,11 +10,10 @@ locality:
   country: UK
 tube:
   station: Stratford
-  url: https://tfl.gov.uk/hub/stop/HUBSRA/stratford/
 suffix:
   suffix: PhD
   url: http://etheses.whiterose.ac.uk/2909/
 job:
   organisation: Bulb
   url: https://bulb.co.uk
-  title: Full-Stack Software Engineer
+  title: Senior Software Engineer
