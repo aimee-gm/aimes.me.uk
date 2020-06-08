@@ -23,3 +23,5 @@ syndication:
   - name: Strava
     url: "https://www.strava.com/activities/554653003"
 ---
+
+My first Audax (of quite a few) and my first 300km! Again, I was talked into this by Arran. It's clear I had caught the ultra-long distance bug by now.

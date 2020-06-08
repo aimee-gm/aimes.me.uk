@@ -20,5 +20,7 @@ tags:
   - cycling
 syndication:
   - name: Strava
-    url: 'https://www.strava.com/activities/531617754'
+    url: "https://www.strava.com/activities/531617754"
 ---
+
+One week before my attempt at cycling Coast-to-Coast in a day, I look my first longish-distance solo trip. This ride was also the first time I ever knowingly attempted Crich, and I learnt how to keep going without a break.

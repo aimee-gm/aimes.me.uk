@@ -1,5 +1,5 @@
 ---
-title: 'Tommy Godwin to Cafe Velo, Beverly'
+title: "Tommy Godwin to Cafe Velo, Beverly"
 date: 2016-07-06T04:01:57.000Z
 activity:
   distance: 329.53
@@ -20,5 +20,7 @@ tags:
   - cycling
 syndication:
   - name: Strava
-    url: 'https://www.strava.com/activities/632389219'
+    url: "https://www.strava.com/activities/632389219"
 ---
+
+With Hannah and Arran, we took a taste of one day of Tommy Godwin's World Record: cycling 75,065 miles in a year (in 1939!) at an average of 205 miles per day. We cycled from Nottingham to Beverly, passing over the Humber Bridge, and arrived home to Arran and Gill's with a Barbeque.

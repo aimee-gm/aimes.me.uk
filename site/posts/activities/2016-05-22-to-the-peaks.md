@@ -20,5 +20,7 @@ tags:
   - cycling
 syndication:
   - name: Strava
-    url: 'https://www.strava.com/activities/584554157'
+    url: "https://www.strava.com/activities/584554157"
 ---
+
+A training ride out with Hannah and Jonathon. I remember this being a nice day out, and that we visited a vegetarian cafe in the peak district. I had no idea where it was, until the year after when we visited the Peak district and stumbled across this same cafe! The cafe was at Caudwell’s Mill at Rowsley, which was also very interesting to visit.
