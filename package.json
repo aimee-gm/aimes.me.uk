@@ -29,7 +29,7 @@
     "eslint": "^7.2.0",
     "eslint-config-prettier": "^6.10.1",
     "express": "^4.17.1",
-    "html-validate": "^2.22.0",
+    "html-validate": "^3.0.0",
     "husky": "^4.2.5",
     "linkinator": "^2.1.1",
     "lint-staged": "^10.2.11",
