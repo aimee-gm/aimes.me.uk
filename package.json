@@ -32,7 +32,7 @@
     "html-validate": "^2.22.0",
     "husky": "^4.2.5",
     "linkinator": "^2.1.1",
-    "lint-staged": "^10.2.10",
+    "lint-staged": "^10.2.11",
     "microformats-parser": "^1.4.0",
     "mocha": "^8.0.1",
     "prettier": "^2.0.4",
