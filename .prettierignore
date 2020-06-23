@@ -1,2 +1,4 @@
 **/dist
 node_modules
+backstop_data
+site/assets/images/icons.svg

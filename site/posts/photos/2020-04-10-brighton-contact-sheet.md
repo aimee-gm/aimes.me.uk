@@ -10,7 +10,7 @@ tags:
   - film
 syndication:
   - name: Flickr
-    url: https://www.flickr.com/photos/184816014@N06/albums/72157714807947093
+    url: https://www.flickr.com/photos/aimeegm/albums/72157714807947093
 ---
 
 Visits to Brighton, Canary Wharf Winter Lights and the Barbican in January 2020.

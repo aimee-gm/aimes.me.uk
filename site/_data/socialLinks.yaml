@@ -1,0 +1,16 @@
+- url: https://twitter.com/aimeegamble
+  label: Twitter
+  username: aimeegamble
+  icon: twitter
+- url: https://www.flickr.com/photos/aimeegm/
+  label: Flickr
+  username: aimeegm
+  icon: flickr
+- url: https://github.com/aimee-gm
+  label: GitHub
+  username: aimee-gm
+  icon: github
+- url: https://gitlab.com/aimee.gm
+  label: GitLab
+  username: aimee.gm
+  icon: gitlab
