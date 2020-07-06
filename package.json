@@ -22,7 +22,7 @@
   "devDependencies": {
     "@commitlint/cli": "^9.0.1",
     "@commitlint/config-conventional": "^9.0.1",
-    "@prettier/plugin-xml": "^0.7.2",
+    "@prettier/plugin-xml": "^0.8.0",
     "backstopjs": "^5.0.1",
     "chai": "^4.2.0",
     "chai-jest-snapshot": "^2.0.0",
