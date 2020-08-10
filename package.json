@@ -34,7 +34,7 @@
     "linkinator": "^2.1.1",
     "lint-staged": "^10.2.11",
     "microformats-parser": "^1.4.0",
-    "mocha": "^8.1.0",
+    "mocha": "^8.1.1",
     "prettier": "^2.0.4",
     "wsrun": "^5.2.1"
   },
