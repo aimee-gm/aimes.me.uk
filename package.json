@@ -31,7 +31,7 @@
     "express": "^4.17.1",
     "html-validate": "^3.2.0",
     "husky": "^4.3.0",
-    "linkinator": "^2.1.2",
+    "linkinator": "^2.12.2",
     "lint-staged": "^10.5.2",
     "microformats-parser": "^1.4.0",
     "mocha": "^8.2.1",
