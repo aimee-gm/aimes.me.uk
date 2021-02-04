@@ -47,9 +47,7 @@ module.exports = (eleventyConfig) => {
 
   eleventyConfig.setDataDeepMerge(true);
   eleventyConfig.addPassthroughCopy("assets");
-  eleventyConfig.addDataExtension("yaml", (contents) =>
-    yaml.safeLoad(contents)
-  );
+  eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents));
 
   eleventyConfig.setLibrary("md", mdLibrary);
 
