@@ -3381,10 +3381,10 @@ html-encoding-sniffer@^2.0.1:
   dependencies:
     whatwg-encoding "^1.0.5"
 
-html-validate@^4.4.0:
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/html-validate/-/html-validate-4.4.0.tgz#9d6d33e083e4d394004b7f49d90afd82ff6a0e1d"
-  integrity sha512-pyCqeL2iPYG95wqGvQhkA4nUy7XNe1sf5ABxqika5/mCPcPbnnpEzHkJ+2t8jcQghf4DrMcBipGxyDTRtwklIQ==
+html-validate@^4.6.0:
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/html-validate/-/html-validate-4.6.0.tgz#bb0377a55affde8b7fbbdaf95895339dfb97c4c4"
+  integrity sha512-yL19NuUeGDr6eXzdnFo0pxU0g9WB+Bziw/bTAlE49Pnc60C9ApHyoQiNqyUUmgRvxhdMoXSIQRYuDhw3UbDcag==
   dependencies:
     "@babel/code-frame" "^7.10.4"
     "@html-validate/stylish" "1.0.0"
